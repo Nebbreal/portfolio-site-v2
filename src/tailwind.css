@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Fonts */
+@font-face {
+    font-family: Jaro;
+    font-variation-settings: "opsz" 24;
+    src: url('assets/fonts/jaro/Jaro-Regular-VariableFont_opsz.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Asap;
+    src: url('assets/fonts/asap/Asap-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: AsapItalic;
+    src: url('assets/fonts/asap/Asap-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+/* Theme */
+@theme {
+    --font-primary: Asap, "sans-serif";
+    --font-primary-italic: AsapItalic, "sans-serif";
+    --font-heading: Jaro, "sans-serif";
+
+    --color-primary: #BD85F9;
+    --color-primary-dark: #695191;
+    --color-secondary: #F9FF47;
+    --color-background: #2D2B2B;
+    --color-lowlight: #ACACAC;
+    --color-text: #FFFFFF;
+}
+
+@layer base {
+    p {
+        @apply font-primary text-text text-lg
+    }
+
+    h1 {
+        @apply font-heading text-text text-6xl
+    }
+
+    h2 {
+        @apply font-heading text-text text-3xl
+    }
+
+    h3 {
+        @apply font-heading text-text text-xl
+    }
+}
