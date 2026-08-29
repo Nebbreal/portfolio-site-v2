@@ -48,3 +48,9 @@
         @apply font-heading text-text text-xl
     }
 }
+
+@layer components {
+    .primary-border{
+        @apply border-6 border-t-26 border-primary
+    }
+}

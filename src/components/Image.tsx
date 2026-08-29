@@ -6,7 +6,7 @@ type ImageProps = {
 
 function Image(props: ImageProps) {
     return (
-        <div className={"max-w-100 border-6 border-t-26 border-primary"}>
+        <div className={"max-w-100 primary-border"}>
             <div className={"flex -mt-7 justify-between"}>
                 <h3>{props.title}</h3>
                 <h3>X</h3>
