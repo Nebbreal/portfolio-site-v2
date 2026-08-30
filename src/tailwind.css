@@ -33,7 +33,7 @@
 
 @layer base {
     p {
-        @apply font-primary text-text text-lg
+        @apply font-primary text-text text-xl
     }
 
     h1 {
@@ -51,6 +51,8 @@
 
 @layer components {
     .primary-border{
-        @apply border-6 border-t-26 border-primary
+        @apply border-primary;
+        border-width: clamp(2px, 0.4vw, 6px);
+        border-top-width: 0;
     }
 }
