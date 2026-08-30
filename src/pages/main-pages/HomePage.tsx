@@ -2,7 +2,7 @@ import Button from "../../components/Button.tsx";
 import Image from "../../components/Image.tsx";
 import {Link} from "react-router";
 
-function Home() {
+function HomePage() {
     return (
         <>
             <h1>Hoi o/</h1>
@@ -36,4 +36,4 @@ function Home() {
     )
 }
 
-export default Home
+export default HomePage

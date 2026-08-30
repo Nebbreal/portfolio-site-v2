@@ -4,9 +4,9 @@ import './tailwind.css'
 import './index.css'
 import {createBrowserRouter} from "react-router";
 import {RouterProvider} from "react-router/dom";
-import Home from "./pages/main-pages/Home.tsx";
+import HomePage from "./pages/main-pages/HomePage.tsx";
 import Layout from "./pages/Layout.tsx";
-import Projects from "./pages/main-pages/Projects.tsx";
+import ProjectsPage from "./pages/main-pages/ProjectsPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -15,11 +15,11 @@ const router = createBrowserRouter([
         children:[
             {
                 index: true,
-                element: <Home />
+                element: <HomePage />
             },
             {
                 path: "/projects",
-                element: <Projects />
+                element: <ProjectsPage />
             }
         ]
     }

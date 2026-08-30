@@ -1,13 +1,15 @@
 import type {ReactNode} from "react";
-import type {Dictionary} from "../helpers/interfaces.ts";
+import type {Dictionary, ListEntryComponent} from "../helpers/interfaces.ts";
 
 export type project = {
     title: string
     summary: string
     coverImageUrl: string
     skills: skillEntry[]
-    info: infoEntry[]
-    blogBody: ReactNode
+    developmentTime: string
+    developmentStartDate: string
+    teamMembers: string
+    blogBody: ReactNode | undefined
 }
 
 export const allSkills: Dictionary<skillEntry> = {
@@ -21,18 +23,14 @@ export const allSkills: Dictionary<skillEntry> = {
     },
     userTests:{
         name: "User tests",
-        imageUrl: "assets/icons/Person.png"
+        imageUrl: "assets/icons/Person.svg"
     }
 }
 
-export type skillEntry = {
-    imageUrl: string
-    name: string
-}
+export type skillEntry = ListEntryComponent
 
-export type infoEntry = {
-    imageUrl: string
-    name: string
+export type infoEntry = ListEntryComponent & {
+    tooltip?: string;
 }
 
 export type chapter = {

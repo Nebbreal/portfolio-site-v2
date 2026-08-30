@@ -35,11 +35,11 @@ function Layout(){
                 })}
             </div>
 
-            <div className={"mx-12 mt-2"}>
+            <div className={"mx-12 mt-2 mb-2 min-h-[80vh]"}>
                 <Outlet />
             </div>
 
-            <hr className={"text-primary border-3 mt-2"}/>
+            <hr className={"text-primary border-3 mt-auto"}/>
             <div className={"flex ms-2 mt-1"}>
                 <div>
                     <h2 className={"text-lowlight"}>Demiën van Laarhoven</h2>
