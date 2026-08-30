@@ -6,7 +6,7 @@ type ChapterListProps = {
 
 function ChapterList(props: ChapterListProps) {
     return (
-        <div className={"lg:max-w-60 h-full primary-border sticky"}>
+        <div className={"lg:max-w-60 primary-border sticky"}>
             <div className={"flex justify-between bg-primary"}>
                 <h3>Chapters.list</h3>
             </div>

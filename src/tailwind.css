@@ -48,6 +48,10 @@
         @apply font-heading text-text text-2xl
     }
 
+    ul {
+        @apply ms-6 list-disc
+    }
+
     html {
         @apply scroll-smooth;
     }
