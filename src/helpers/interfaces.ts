@@ -3,6 +3,6 @@ export interface Dictionary<T> {
 }
 
 export interface ListEntryComponent {
-    name: string,
+    label: string,
     imageUrl: string
 }

@@ -14,16 +14,16 @@ export type project = {
 
 export const allSkills: Dictionary<skillEntry> = {
     csharp: {
-        name: "Csharp",
-        imageUrl: "assets/images/skills/CsharpLogo.svg"
+        label: "Csharp",
+        imageUrl: "/assets/images/skills/CsharpLogo.svg"
     },
     unity:{
-        name: "Unity",
-        imageUrl: "assets/images/skills/UnityLogo.svg"
+        label: "Unity",
+        imageUrl: "/assets/images/skills/UnityLogo.svg"
     },
     userTests:{
-        name: "User tests",
-        imageUrl: "assets/icons/Person.svg"
+        label: "User tests",
+        imageUrl: "/assets/icons/Person.svg"
     }
 }
 

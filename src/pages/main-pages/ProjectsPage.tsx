@@ -5,7 +5,11 @@ function ProjectsPage(){
     return (
         <>
             <h1>Projects</h1>
-            <Project project={FrightlessBirdsProject} />
+            <div className={"mt-2 mb-15 grid lg:grid-cols-3 xs:grid-cols-1 gap-10"}>
+                <Project project={FrightlessBirdsProject} />
+                <Project project={FrightlessBirdsProject} />
+                <Project project={FrightlessBirdsProject} />
+            </div>
         </>
     )
 }

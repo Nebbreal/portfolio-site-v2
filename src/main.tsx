@@ -7,6 +7,7 @@ import {RouterProvider} from "react-router/dom";
 import HomePage from "./pages/main-pages/HomePage.tsx";
 import Layout from "./pages/Layout.tsx";
 import ProjectsPage from "./pages/main-pages/ProjectsPage.tsx";
+import FrightlessBirdsBlog from "./pages/blogs/FrightlessBirdsBlog.tsx";
 
 const router = createBrowserRouter([
     {
@@ -18,8 +19,12 @@ const router = createBrowserRouter([
                 element: <HomePage />
             },
             {
-                path: "/projects",
-                element: <ProjectsPage />
+                path: "projects",
+                element: <ProjectsPage />,
+            },
+            {
+                path: "projects/frightlessbirds",
+                element: <FrightlessBirdsBlog />
             }
         ]
     }

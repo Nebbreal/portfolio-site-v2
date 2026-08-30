@@ -35,7 +35,7 @@ function Layout(){
                 })}
             </div>
 
-            <div className={"mx-12 mt-2 mb-2 min-h-[80vh]"}>
+            <div className={"lg:mx-12 mx-3 mt-2 mb-2 min-h-[80vh]"}>
                 <Outlet />
             </div>
 
@@ -52,10 +52,10 @@ function Layout(){
                     <h2 className={"text-lowlight"}>Find me at</h2>
                     <div className={"flex gap-x-2"}>
                         <a href={"https://github.com/Nebbreal"} target="_blank" rel="noopener noreferrer">
-                            <Button imageUrl={"assets/images/external-icons/GithubLogo.svg"} imageAlt={"Github Logo"} />
+                            <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"} imageAlt={"Github Logo"} />
                         </a>
                         <a href={"https://www.linkedin.com/in/demi%C3%ABn-van-laarhoven/"} target="_blank" rel="noopener noreferrer">
-                            <Button imageUrl={"assets/images/external-icons/LinkedInLogo.svg"} imageAlt={"LinkedIn logo"} />
+                            <Button imageUrl={"/assets/images/external-icons/LinkedInLogo.svg"} imageAlt={"LinkedIn logo"} />
                         </a>
                     </div>
                 </div>
