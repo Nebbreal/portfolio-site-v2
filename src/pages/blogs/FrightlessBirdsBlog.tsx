@@ -3,8 +3,11 @@ import {FrightlessBirdsProject} from "../../data/projects.ts";
 import ChapterList from "./template/ChapterList.tsx";
 import InfoCard from "../../components/project/InfoCard.tsx";
 import type {Chapter} from "../../types/chapter.ts";
+import Image from "../../components/Image.tsx";
 
 function FrightlessBirdsBlog() {
+    const baseImagePath = "/assets/images/projects/blogs/frightless-birds/"
+
     const chapters: Chapter[] = [
         {
             id: "My contributions",
@@ -55,7 +58,9 @@ function FrightlessBirdsBlog() {
                     <span className={"text-secondary"}> messing with your friends</span> and
                     <span className={"text-secondary"}> simplicity</span>.</p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"References.png"} imageUrl={baseImagePath + "FrightlessBirdsReferenceGames.jpg"}
+                       alt={"A picture of the banner images for Wii Party and Ultimate Chicken Horse"}
+                />
                 <p>To achieve this we looked into how other games like Celeste kept their controls easy to understand
                     and how party games like Wii Party create chaos.
                 </p>
@@ -65,13 +70,22 @@ function FrightlessBirdsBlog() {
                 </p>
 
                 <h3>Dash</h3>
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"Dash.webp"} imageUrl={baseImagePath + "PlayerActionsShowcaseDash.webp"}
+                       alt={"A animated image of the player dashing with a quick burst of speed"}
+                />
                 <h3>Attack</h3>
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"Attack.webp"} imageUrl={baseImagePath + "PlayerActionsShowcaseAttack.webp"}
+                       alt={"A animated image of the player emitting a screech"}
+                />
                 <h3>Block</h3>
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
-
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"Block.webp"} imageUrl={baseImagePath + "PlayerActionsShowcaseBlock.webp"}
+                       alt={"A animated image of the player encasing themselves in an egg"}
+                />
+                <br/>
+                <Image title={"InteractionTriangle.png"} imageUrl={baseImagePath + "InteractionTriangle.png"}
+                       alt={"A triangle displaying the rock paper scissors system in Frightless Birds, " +
+                           "Dash dashes through attack, attack breaks the block and block deflects the dash"}
+                />
                 <p>These mechanics act in a pseudo rock paper scissors system to aid in creating a dynamic during
                     gameplay where players try to mess each other over while still providing counterplay.
                 </p>
@@ -86,19 +100,34 @@ function FrightlessBirdsBlog() {
                     a event system that handles the majority of communication between scripts.
                 </p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"EventSystemStructure.png"} imageUrl={baseImagePath + "EventSystemStructure.png"}
+                       alt={"A diagram showcasing the interaction between a GameEvent and a GameEvent listener " +
+                           "a GameEventListener register itself to the GameEvent when it gets enabled and " +
+                           "deregisters when disabled. When the Raise method is called on the GameEvent every " +
+                           "listener will activate their OnEventRaised method."}
+                />
                 <p>The Event System consists of 2 components, the GameEvent and the GameEventListener. </p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"GameEventRaise.png"} imageUrl={baseImagePath + "GameEventRaise.png"}
+                       alt={"A code block showcasing the Raise method of GameEvent"}
+                />
+                <br/>
+                <Image title={"OnWinGameCall.png"} imageUrl={baseImagePath + "OnWinGameCall.png"}
+                       alt={"A code block showcasing the Raise method being called"}
+                />
+                <Image title={"OnWinGameEditor.png"} imageUrl={baseImagePath + "OnWinGameEditor.png"}
+                       alt={"A unity component showcasing the OnWinGame event being linked to a Scoreboard Manager script"}
+                />
                 <p>GameEvents are referenced in scripts via a <span className={"text-secondary"}>serialized field</span>
                     where a trigger for said event is needed which can get called with the <span className={"text-secondary"}>“Raise()”</span> method.</p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"OnWinGameEventListener.png"} imageUrl={baseImagePath + "OnWinGameEventListener.png"}
+                       alt={"A unity component showcasing the Game Event Listener for the 'Win Game' event"}
+                />
                 <p>This “Raise” method is linked to a GameEvent listener which in turn can be assigned to objects in editor.</p>
 
                 <h2 id="Minigame framework">Minigame framework</h2>
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+
                 <p>
                     Since Frightless Birds is a minigame based party game we need a system to easily add new minigames.
                     <br/>
@@ -106,10 +135,18 @@ function FrightlessBirdsBlog() {
                     to visually add and configure minigames.
                 </p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"MinigameFrameworkFrozenFeathers.png"} imageUrl={baseImagePath + "MinigameFrameworkFrozenFeathers.png"}
+                       alt={"A custom unity scriptable object showing various fields to configure minigame settings"}
+                />
                 <p>These minigames then are able to be added by simply dragging them into the <span className={"text-secondary"}>GameManager</span>.</p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"MinigameFrameworkMinigames.png"} imageUrl={baseImagePath + "MinigameFrameworkMinigames.png"}
+                       alt={"A unity component showcasing a serializable list which contain the previously mentioned " +
+                           "minigame objects"}
+                />
+                <Image title={"MinigameFrameworkDiagram.png"} imageUrl={baseImagePath + "MinigameFrameworkDiagramv0.3.png"}
+                       alt={"A diagram showcasing the structure of the various minigame Framework classes"}
+                />
                 <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
                 <p>
                     The framework consists of the following parts which interact with each other by making use of a
@@ -140,12 +177,16 @@ function FrightlessBirdsBlog() {
                 </p>
 
                 <h2 id="Brace Rework">Brace Rework</h2>
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"Oldbrace.webp"} imageUrl={baseImagePath + "OldBrace.webp"}
+                       alt={"A animated image showing the player having a parry like brace with them flashing blue when activating it"}
+                />
                 <p>Originally our brace functioned a bit like a <span className={"text-secondary"}>Parry</span> which
                     allowed people to deflect the dash with the correct timing. However in user testing we found that
                     the way that it worked was <span className={"text-secondary"}>too confusing</span>.</p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"BlockExamples.webp"} imageUrl={baseImagePath + "BlockExamples.webp"}
+                       alt={"A animated image showcasing references from various games' defensive mechanics"}
+                />
                 <p>
                     For the redesign I first looked at how other games handled defensive mechanics.
                     <br/>
@@ -175,7 +216,9 @@ function FrightlessBirdsBlog() {
                     Based on these requirements after some internal iteration I came up with the following design.
                 </p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"Block.webp"} imageUrl={baseImagePath + "Block.webp"}
+                       alt={"A animated image showcasing the new block where the player encases themselves in an egg"}
+                />
                 <p>
                     The new block allows players to <span className={"text-secondary"}>encase themselves in an egg for 3 seconds </span>
                     before they are forced to lower it again.
@@ -187,7 +230,10 @@ function FrightlessBirdsBlog() {
                     The max charge is easily configurable on the player controller script.
                 </p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"InteractionTriangle.png"} imageUrl={baseImagePath + "InteractionTriangle.png"}
+                       alt={"A triangle displaying the rock paper scissors system in Frightless Birds, " +
+                           "Dash dashes through attack, attack breaks the block and block deflects the dash"}
+                />
                 <p>
                     The interaction with the rock paper scissors system was also changed in this redesign. Previously
                     when the players were attacked when bracing they would get stunned.
@@ -202,7 +248,10 @@ function FrightlessBirdsBlog() {
                 <h2 id="Frozen feathers(Minigame)">Frozen feathers(Minigame)</h2>
                 <p>For Frightless Birds I also desinged and created one of the minigames, that being Frozen Feathers.</p>
 
-                <h1 className={"text-red-600"}>PUT IMAGE HERE</h1>
+                <Image title={"FrozenFeathersPreview.webp"} imageUrl={baseImagePath + "FrozenFeathersPreview.webp"}
+                       alt={"A animated image showcasing 4 birds competing with each other " +
+                           "and attempting to push the others off of a shrinking ice platform"}
+                />
                 <p>
                     Due to Frozen Feathers being the very first minigame added I wanted it to be <span className={"text-secondary"}>simple to allow the core player mechanics to take the spotlight</span>.
                     <br/>
