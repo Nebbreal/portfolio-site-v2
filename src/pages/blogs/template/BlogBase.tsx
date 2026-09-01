@@ -15,7 +15,7 @@ function BlogBase(props: BlogBaseProps) {
     return (
         <div className={"lg:flex lg:justify-center gap-x-3"}>
             {props.chapters && (
-                <div className={"lg:sticky lg:top-4 lg:self-start lg:max-w-60"}>
+                <div className={"lg:sticky lg:top-4 lg:self-start lg:max-w-60 mb-2 lg:mb-0"}>
                     <ChapterList chapters={props.chapters} />
                 </div>
             )}
