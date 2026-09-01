@@ -7,7 +7,7 @@ type InfoCardProps = {
 
 function InfoCard(props: InfoCardProps) {
     return (
-        <div className={"w-50 primary-border"}>
+        <div className={"primary-border"}>
             <div className={"flex justify-between bg-primary"}>
                 <h3>{props.title}.Card</h3>
                 <h3>X</h3>
@@ -16,7 +16,7 @@ function InfoCard(props: InfoCardProps) {
                 return (
                     <div key={index} className={"flex ps-1 py-2 items-center"}>
                         <img className={"size-15"} src={entry.imageUrl} alt={entry.label + " icon"} />
-                        <p>{entry.label}</p>
+                        <p className={"min-w-0 wrap-break-word"}>{entry.label}</p>
                     </div>
                 )
             })}

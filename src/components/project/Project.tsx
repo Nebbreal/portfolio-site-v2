@@ -18,29 +18,31 @@ function Project(props: ProjectProps) {
                 <img src={project.coverImageUrl} alt={project.title + " cover image"} />
                 <p>{project.summary}</p>
 
-                <div className={"flex justify-between px-15"}>
-                    <div>
-                        <h2>Info</h2>
-                        <InfoCard title={"DevInfo"} infoEntries={
-                            [
-                                {
-                                    label: project.developmentTime,
-                                    imageUrl: "/assets/icons/Clock.svg"
-                                },
-                                {
-                                    label: project.developmentStartDate,
-                                    imageUrl: "/assets/icons/Calendar.svg"
-                                },
-                                {
-                                    label: project.teamMembers,
-                                    imageUrl: "/assets/icons/Person.svg"
-                                }
-                            ]
-                        }/>
-                    </div>
-                    <div>
-                        <h2>Skills</h2>
-                        <InfoCard title={"Skills"} infoEntries={project.skills} />
+                <div className={"flex justify-center"}>
+                    <div className={"grid grid-cols-2 gap-x-5"}>
+                        <div>
+                            <h2>Info</h2>
+                            <InfoCard title={"DevInfo"} infoEntries={
+                                [
+                                    {
+                                        label: project.developmentTime,
+                                        imageUrl: "/assets/icons/Clock.svg"
+                                    },
+                                    {
+                                        label: project.developmentStartDate,
+                                        imageUrl: "/assets/icons/Calendar.svg"
+                                    },
+                                    {
+                                        label: project.teamMembers,
+                                        imageUrl: "/assets/icons/Person.svg"
+                                    }
+                                ]
+                            }/>
+                        </div>
+                        <div>
+                            <h2>Skills</h2>
+                            <InfoCard title={"Skills"} infoEntries={project.skills} />
+                        </div>
                     </div>
                 </div>
 

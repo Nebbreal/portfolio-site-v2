@@ -7,6 +7,6 @@ export const FrightlessBirdsProject: project = {
     skills: [allSkills["unity"], allSkills["csharp"], allSkills["userTests"]],
     developmentTime: "3 Months",
     developmentStartDate: "Mar 2026",
-    teamMembers: "5(+1 temporary) members",
+    teamMembers: "5 (+1 temporary) members",
     blogBody: undefined
 }

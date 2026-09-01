@@ -14,7 +14,7 @@ export type project = {
 
 export const allSkills: Dictionary<skillEntry> = {
     csharp: {
-        label: "Csharp",
+        label: "C#",
         imageUrl: "/assets/images/skills/CsharpLogo.svg"
     },
     unity:{
