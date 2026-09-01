@@ -15,7 +15,7 @@ function BlogBase(props: BlogBaseProps) {
     return (
         <div className={"lg:flex lg:justify-center gap-x-3"}>
             {props.chapters && (
-                <div>
+                <div className={"lg:sticky lg:top-4 lg:self-start lg:max-w-60"}>
                     <ChapterList chapters={props.chapters} />
                 </div>
             )}
@@ -28,7 +28,7 @@ function BlogBase(props: BlogBaseProps) {
             }
 
 
-            <div className={"mt-2 lg:mt-0 flex flex-col items-center gap-y-2 sticky"}>
+            <div className={"mt-2 lg:mt-0 flex flex-col items-center gap-y-2 lg:sticky lg:top-4 lg:self-start lg:max-w-60"}>
                 <InfoCard title={"DevInfo"} infoEntries={[
                     {
                         label: props.projectObj.developmentTime,
