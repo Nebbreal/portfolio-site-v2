@@ -7,10 +7,10 @@ function HomePage() {
         <>
             <h1>Hoi o/</h1>
             <h1>I'm <span className={"text-primary"}>Demiën van Laarhoven</span></h1>
-            <h2 className={"w-180 mt-2"}>A <span className={"text-secondary"}>gameplay programmer</span> from the Netherlands who loves bringing stuff to life with code.</h2>
+            <h2 className={"lg:w-180 mt-2"}>A <span className={"text-secondary"}>gameplay programmer</span> from the Netherlands who loves bringing stuff to life with code.</h2>
             <h2>I am mainly experienced in <span className={"text-secondary"}>Unity</span>.</h2>
 
-            <div className={"flex mt-10 gap-5"}>
+            <div className={"flex flex-col mt-10 gap-5"}>
                 <Button>
                     <Link to="/projects">
                         <h1>Projects</h1>
