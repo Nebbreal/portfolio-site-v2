@@ -7,7 +7,7 @@ type InfoCardProps = {
 
 function InfoCard(props: InfoCardProps) {
     return (
-        <div className={"primary-border"}>
+        <div className={"primary-border min-w-60"}>
             <div className={"flex justify-between bg-primary"}>
                 <h3>{props.title}.Card</h3>
                 <h3>X</h3>
