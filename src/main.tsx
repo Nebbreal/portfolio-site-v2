@@ -10,6 +10,7 @@ import ProjectsPage from "./pages/main-pages/ProjectsPage.tsx";
 import FrightlessBirdsBlog from "./pages/blogs/FrightlessBirdsBlog.tsx";
 import ContactPage from "./pages/main-pages/ContactPage.tsx";
 import MeerMomoBlog from "./pages/blogs/MeerMomoBlog.tsx";
+import HogidBlog from "./pages/blogs/HogidBlog.tsx";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: "projects/meermomo",
                 element: <MeerMomoBlog />
+            },
+            {
+                path:"projects/hogid",
+                element: <HogidBlog />
             },
             {
                 path: "contact",

@@ -26,10 +26,13 @@ function BlogBase(props: BlogBaseProps) {
                 <ArticleBase project={props.projectObj}>
                     {props.children}
                 </ArticleBase> : (
-                    <div>
-                        <p>No blog article has been added yet take this picture instead :)</p>
-                        <Image title={"Luna2.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={"A picture of my dog (Luna) looking at the camera in a pleading manner"}/>
-                    </div>
+                    <ArticleBase project={props.projectObj}>
+                        <div className={"flex flex-col w-full items-center mt-5"}>
+                            <p className={"text-lowlight"}>No blog article has been added yet take this picture instead :)</p>
+                            <Image title={"Luna2.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={"A picture of my dog (Luna) looking at the camera in a pleading manner"}/>
+                        </div>
+
+                    </ArticleBase>
                 )
             }
 

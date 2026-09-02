@@ -10,11 +10,12 @@ function ProjectsPage(){
                 <Link to={"frightlessbirds"}>
                     <Project project={FrightlessBirdsProject} />
                 </Link>
-                <Link to={"projects/meermomo"}>
+                <Link to={"meermomo"}>
                     <Project project={MeerMomoProject} />
                 </Link>
-                <Project project={HogidProject} />
-
+                <Link to={"hogid"}>
+                    <Project project={HogidProject} />
+                </Link>
             </div>
         </>
     )
