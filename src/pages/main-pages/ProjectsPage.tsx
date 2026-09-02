@@ -1,5 +1,5 @@
 import Project from "../../components/project/Project.tsx";
-import {FrightlessBirdsProject} from "../../data/projects.ts";
+import {FrightlessBirdsProject, HogidProject, MeerMomoProject} from "../../data/projects.ts";
 import {Link} from "react-router";
 
 function ProjectsPage(){
@@ -10,8 +10,10 @@ function ProjectsPage(){
                 <Link to={"frightlessbirds"}>
                     <Project project={FrightlessBirdsProject} />
                 </Link>
-                <Project project={FrightlessBirdsProject} />
-                <Project project={FrightlessBirdsProject} />
+                <Link to={"projects/meermomo"}>
+                    <Project project={MeerMomoProject} />
+                </Link>
+                <Project project={HogidProject} />
 
             </div>
         </>

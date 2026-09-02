@@ -1,4 +1,3 @@
-import type {ReactNode} from "react";
 import type {Dictionary, ListEntryComponent} from "../helpers/interfaces.ts";
 
 export type project = {
@@ -9,7 +8,6 @@ export type project = {
     developmentTime: string
     developmentStartDate: string
     teamMembers: string
-    blogBody: ReactNode | undefined
 }
 
 export const allSkills: Dictionary<skillEntry> = {
@@ -24,6 +22,10 @@ export const allSkills: Dictionary<skillEntry> = {
     userTests:{
         label: "User tests",
         imageUrl: "/assets/icons/Person.svg"
+    },
+    seriousGame:{
+        label: "Serious game",
+        imageUrl: "/assets/icons/Controller.svg"
     }
 }
 

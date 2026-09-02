@@ -4,6 +4,7 @@ import InfoCard from "../../../components/project/InfoCard.tsx";
 import type {Chapter} from "../../../types/chapter.ts";
 import type {project} from "../../../types/project.ts";
 import type {ReactNode} from "react";
+import Image from "../../../components/Image.tsx";
 
 type BlogBaseProps = {
     chapters?: Chapter[]
@@ -21,10 +22,15 @@ function BlogBase(props: BlogBaseProps) {
             )}
 
 
-            {props.children &&
+            {props.children ?
                 <ArticleBase project={props.projectObj}>
                     {props.children}
-                </ArticleBase>
+                </ArticleBase> : (
+                    <div>
+                        <p>No blog article has been added yet take this picture instead :)</p>
+                        <Image title={"Luna2.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={"A picture of my dog (Luna) looking at the camera in a pleading manner"}/>
+                    </div>
+                )
             }
 
 
