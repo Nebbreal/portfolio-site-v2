@@ -17,11 +17,6 @@ function HomePage() {
                     </Link>
                 </Button>
                 <Button>
-                    <Link to="/skills">
-                        <h1>Skills</h1>
-                    </Link>
-                </Button>
-                <Button>
                     <Link to="/contact">
                         <h1>Contact</h1>
                     </Link>

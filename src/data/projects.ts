@@ -8,5 +8,5 @@ export const FrightlessBirdsProject: project = {
     developmentTime: "3 Months",
     developmentStartDate: "Mar 2026",
     teamMembers: "5 (+1 temporary) members",
-    blogBody: undefined
+    blogBody: undefined,
 }

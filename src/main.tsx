@@ -8,6 +8,7 @@ import HomePage from "./pages/main-pages/HomePage.tsx";
 import Layout from "./pages/Layout.tsx";
 import ProjectsPage from "./pages/main-pages/ProjectsPage.tsx";
 import FrightlessBirdsBlog from "./pages/blogs/FrightlessBirdsBlog.tsx";
+import ContactPage from "./pages/main-pages/ContactPage.tsx";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "projects/frightlessbirds",
                 element: <FrightlessBirdsBlog />
+            },
+            {
+                path: "contact",
+                element: <ContactPage />
             }
         ]
     }
