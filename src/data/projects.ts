@@ -53,7 +53,7 @@ export const HogidProject: project = {
     contributions: [
         "Designed and implemented the item placement system",
         "Designed and implemented the rules system",
-        "(Co)Designed the puzzles",
+        "(Co)Designed the puzzle",
         "Designed and implemented the audio"
     ],
     externalLinks: [
