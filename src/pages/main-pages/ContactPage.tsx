@@ -8,9 +8,11 @@ function ContactPage(){
             <a href={"mailto@demien401@gmail.com"}><p className={"text-secondary"}>demien401@gmail.com</p></a>
             <h2>You can also find me at</h2>
             <div className={"flex gap-2"}>
-                <Button imageUrl={"/assets/icons/Note.svg"}>
-                    <p>CV</p>
-                </Button>
+                <a href={"/assets/files/CV_Demien_van_Laarhoven.pdf"} target={"_blank"}>
+                    <Button imageUrl={"/assets/icons/Note.svg"}>
+                        <p>CV</p>
+                    </Button>
+                </a>
                 <a href={"https://github.com/Nebbreal"} rel={"noopener noreferrer"} target={"_blank"}>
                     <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"}>
                         <p>Github</p>
