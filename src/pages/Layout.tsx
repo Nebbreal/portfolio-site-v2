@@ -2,7 +2,7 @@ import {Outlet, useLocation} from "react-router";
 import {type ReactNode, useEffect, useState} from "react";
 import HeaderNavigationButton from "../components/layout/HeaderNavigationButton.tsx";
 import {titleCaseWord} from "../helpers/textHelpers.ts";
-import Button from "../components/Button.tsx";
+import Footer from "../components/Footer.tsx";
 
 function Layout(){
     let path = useLocation().pathname;
@@ -36,30 +36,10 @@ function Layout(){
             </div>
 
             <div className={"lg:mx-12 mx-3 mt-2 mb-2 min-h-[80vh]"}>
-                <Outlet />
+                <Outlet/>
             </div>
 
-            <hr className={"text-primary border-3 mt-auto"}/>
-            <div className={"flex ms-2 mt-1"}>
-                <div>
-                    <h2 className={"text-lowlight"}>Demiën van Laarhoven</h2>
-                    <h3 className={"text-lowlight"}>Gameplay programmer</h3>
-                    <a href={"mailto:demien401@gmail.com"}>
-                        <h3 className={"text-secondary"}>demien401@gmail.com</h3>
-                    </a>
-                </div>
-                <div className={"ms-4"}>
-                    <h2 className={"text-lowlight"}>Find me at</h2>
-                    <div className={"flex gap-x-2"}>
-                        <a href={"https://github.com/Nebbreal"} target="_blank" rel="noopener noreferrer">
-                            <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"} imageAlt={"Github Logo"} />
-                        </a>
-                        <a href={"https://www.linkedin.com/in/demi%C3%ABn-van-laarhoven/"} target="_blank" rel="noopener noreferrer">
-                            <Button imageUrl={"/assets/images/external-icons/LinkedInLogo.svg"} imageAlt={"LinkedIn logo"} />
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <Footer/>
         </div>
     )
 }

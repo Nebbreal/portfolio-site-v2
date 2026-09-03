@@ -37,7 +37,7 @@ function BlogBase(props: BlogBaseProps) {
             }
 
 
-            <div className={"mt-2 lg:mt-0 flex flex-col items-center gap-y-2 lg:sticky lg:top-4 lg:self-start lg:max-w-60"}>
+            <div className={"mt-2 lg:mt-0 flex flex-col items-start gap-y-2 lg:sticky lg:top-4 lg:self-start lg:max-w-60"}>
                 <InfoCard title={"DevInfo"} infoEntries={[
                     {
                         label: props.projectObj.developmentTime,

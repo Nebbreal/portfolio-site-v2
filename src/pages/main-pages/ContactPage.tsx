@@ -11,12 +11,16 @@ function ContactPage(){
                 <Button imageUrl={"/assets/icons/Note.svg"}>
                     <p>CV</p>
                 </Button>
-                <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"}>
-                    <p>Github</p>
-                </Button>
-                <Button imageUrl={"/assets/images/external-icons/LinkedInLogo.svg"}>
-                    <p>LinkedIn</p>
-                </Button>
+                <a href={"https://github.com/Nebbreal"} rel={"noopener noreferrer"} target={"_blank"}>
+                    <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"}>
+                        <p>Github</p>
+                    </Button>
+                </a>
+                <a href={"https://www.linkedin.com/in/demi%C3%ABn-van-laarhoven/"} rel={"noopener noreferrer"} target={"_blank"}>
+                    <Button imageUrl={"/assets/images/external-icons/LinkedInLogo.svg"}>
+                        <p>LinkedIn</p>
+                    </Button>
+                </a>
             </div>
         </div>
     )
