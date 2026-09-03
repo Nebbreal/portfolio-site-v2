@@ -1,19 +1,27 @@
+import ImageOverlay from "./ImageOverlay.tsx";
+import {useState} from "react";
+
 type ImageProps = {
-    title: string;
-    imageUrl: string;
-    alt: string;
+    title: string
+    imageUrl: string
+    alt: string
 }
 
 function Image(props: ImageProps) {
-    return (
-        <div className={"max-w-100 primary-border"}>
-            <div className={"flex justify-between bg-primary"}>
-                <h3 className={"wrap-anywhere"}>{props.title}</h3>
-                <h3>X</h3>
-            </div>
+    const [isOverlayHidden, setIsOverlayHidden] = useState<boolean>(true)
 
-            <img src={props.imageUrl} alt={props.alt} />
-        </div>
+    return (
+        <>
+            <div onClick={() => setIsOverlayHidden(false)} className={"max-w-100 primary-border hover:cursor-zoom-in"}>
+                <div className={"flex justify-between bg-primary"}>
+                    <h3 className={"wrap-anywhere"}>{props.title}</h3>
+                    <h3>X</h3>
+                </div>
+
+                <img src={props.imageUrl} alt={props.alt} />
+            </div>
+            <ImageOverlay title={props.title} imageUrl={props.imageUrl} alt={props.alt} isHidden={isOverlayHidden} setIsHidden={setIsOverlayHidden} />
+        </>
     )
 }
 
