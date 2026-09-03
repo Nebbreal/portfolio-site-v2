@@ -13,8 +13,8 @@ export const FrightlessBirdsProject: project = {
 }
 
 export const MeerMomoProject: project = {
-    title: "Meer momo",
-    summary:"A fishing game made for mental or physically less abled people to still play and enjoy gaming. The project was made for Hulan's 'Pillo' platform which uses a pillow as a controller. This project has been handed over to Hulan for continued development.",
+    title: "Meer Momo",
+    summary:"Meer Momo is a fishing game made for mental or physically less abled people to still play and enjoy gaming. The project was made for Hulan's 'Pillo' platform which uses a pillow as a controller.",
     coverImageUrl:"/assets/images/projects/cover-images/MeerMomoPreview.png",
     skills: [allSkills["unity"], allSkills["csharp"], allSkills["seriousGame"]],
     developmentTime: "1.5 months",

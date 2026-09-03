@@ -18,8 +18,8 @@ function Project(props: ProjectProps) {
                 <img src={project.coverImageUrl} alt={project.title + " cover image"} />
                 <p>{project.summary}</p>
 
-                <div className={"flex justify-center mt-auto"}>
-                    <div className={"grid grid-cols-2 gap-x-5"}>
+                <div className={"flex justify-center mt-auto w-full"}>
+                    <div className={"grid grid-cols-2 gap-x-5 w-full content-stretch"}>
                         <div>
                             <h2>Info</h2>
                             <InfoCard title={"DevInfo"} infoEntries={

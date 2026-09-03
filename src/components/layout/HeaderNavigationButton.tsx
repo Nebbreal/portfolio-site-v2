@@ -7,7 +7,7 @@ type HeaderNavigationButtonProps = {
 
 function HeaderNavigationButton(props: HeaderNavigationButtonProps) {
     return (
-        <Link to={props.destination}>
+        <Link className={"hover:opacity-70 transition-opacity"} to={props.destination}>
             <h3>{props.text}</h3>
         </Link>
     )
