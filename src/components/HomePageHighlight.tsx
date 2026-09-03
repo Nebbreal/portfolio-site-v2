@@ -12,7 +12,7 @@ function HomePageHighlight(props: HomePageHighlightProps) {
         <Link to={props.blogUrl}>
             <div className={"primary-border hover:cursor-pointer transition-transform hover:scale-110"}>
                 <div className={"flex justify-between bg-primary"}>
-                    <h3 className={"wrap-anywhere"}>{project.title}</h3>
+                    <h3 className={"wrap-anywhere"}>{project.title}.exe</h3>
                     <h3>X</h3>
                 </div>
                 <img className={"w-100"} src={project.coverImageUrl} alt={project.title + " cover image"} />

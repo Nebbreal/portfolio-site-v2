@@ -20,6 +20,15 @@ function ArticleBase(props: BlogBaseProps) {
                     <img src={project.coverImageUrl} alt={project.title + " cover image"} />
                 </div>
                 <p>{project.summary}</p>
+
+                <h2 id="My contributions">My contributions</h2>
+                <p>
+                    <ul>
+                        {project.contributions.map((contribution, index) => {
+                            return (<li key={index}>{contribution}</li>)
+                        })}
+                    </ul>
+                </p>
                 {props.children}
             </div>
         </div>

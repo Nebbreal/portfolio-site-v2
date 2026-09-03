@@ -10,7 +10,7 @@ type ImageOverlayProps = {
 
 function ImageOverlay(props: ImageOverlayProps) {
     return (
-        <div hidden={props.isHidden} onClick={() => props.setIsHidden(true)} className={"fixed inset-0 top-0 left-0 bg-backdrop flex justify-center items-center hover:cursor-zoom-out"}>
+        <div hidden={props.isHidden} onClick={() => props.setIsHidden(true)} className={"fixed inset-0 top-0 left-0 z-100 bg-backdrop flex justify-center items-center hover:cursor-zoom-out"}>
             <div onClick={(e) => e.stopPropagation()} className={"primary-border hover:cursor-auto"}>
                 <div className={"flex justify-between bg-primary"}>
                     <h3 className={"wrap-anywhere"}>{props.title}</h3>

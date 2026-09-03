@@ -35,17 +35,6 @@ function FrightlessBirdsBlog() {
 
     return (
         <BlogBase projectObj={FrightlessBirdsProject} chapters={chapters}>
-            <h2 id="My contributions">My contributions</h2>
-            <p>
-                <ul>
-                    <li>Core player actions design (Group effort)</li>
-                    <li>Minigame Framework</li>
-                    <li>Brace rework</li>
-                    <li>Frozen Feathers (Minigame)</li>
-                    <li>Kiwi model</li>
-                </ul>
-            </p>
-
             <h2 id="Core player actions">Core player actions</h2>
             <p>When creating Frightless Birds we had 2 core design pillars,
                 <span className={"text-secondary"}> messing with your friends</span> and

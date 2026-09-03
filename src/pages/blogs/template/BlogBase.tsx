@@ -5,6 +5,7 @@ import type {Chapter} from "../../../types/chapter.ts";
 import type {project} from "../../../types/project.ts";
 import type {ReactNode} from "react";
 import Image from "../../../components/Image.tsx";
+import ExternalButtonsList from "./ExternalButtonsList.tsx";
 
 type BlogBaseProps = {
     chapters?: Chapter[]
@@ -15,12 +16,13 @@ type BlogBaseProps = {
 function BlogBase(props: BlogBaseProps) {
     return (
         <div className={"lg:flex lg:justify-center gap-x-3"}>
-            {props.chapters && (
-                <div className={"lg:sticky lg:top-4 lg:self-start lg:max-w-60 mb-2 lg:mb-0"}>
-                    <ChapterList chapters={props.chapters} />
-                </div>
-            )}
+            <div className={"lg:sticky lg:top-4 lg:self-start lg:max-w-60 mb-2 lg:mb-0 flex flex-col lg:gap-y-2"}>
+                <ChapterList chapters={props.chapters} />
 
+                {props.projectObj.externalLinks &&
+                    <ExternalButtonsList links={props.projectObj.externalLinks} />
+                }
+            </div>
 
             {props.children ?
                 <ArticleBase project={props.projectObj}>
@@ -28,7 +30,8 @@ function BlogBase(props: BlogBaseProps) {
                 </ArticleBase> : (
                     <ArticleBase project={props.projectObj}>
                         <div className={"flex flex-col w-full items-center mt-5"}>
-                            <p className={"text-lowlight"}>No blog article has been added yet take this picture instead :)</p>
+                            <hr className={"text-lowlight opacity-60 w-full"}/>
+                            <p className={"text-lowlight"}>No blog article has been added yet, take this picture instead :)</p>
                             <Image title={"Luna2.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={"A picture of my dog (Luna) looking at the camera in a pleading manner"}/>
                         </div>
 

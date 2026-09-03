@@ -6,7 +6,7 @@ import {FrightlessBirdsProject} from "../../data/projects.ts";
 
 function HomePage() {
     return (
-        <div className={"lg:flex lg:justify-between h-screen"}>
+        <div className={"lg:flex lg:justify-between min-h-screen"}>
             <div>
                 <h1>Hoi o/</h1>
                 <h1>I'm <span className={"text-primary"}>Demiën van Laarhoven</span></h1>

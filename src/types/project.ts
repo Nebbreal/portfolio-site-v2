@@ -8,6 +8,8 @@ export type project = {
     developmentTime: string
     developmentStartDate: string
     teamMembers: string
+    contributions: string[]
+    externalLinks?: externalLink[]
 }
 
 export const allSkills: Dictionary<skillEntry> = {
@@ -38,4 +40,10 @@ export type infoEntry = ListEntryComponent & {
 export type chapter = {
     label: string
     link: string
+}
+
+export type externalLink = {
+    label: string
+    link: string
+    imageUrl?: string
 }

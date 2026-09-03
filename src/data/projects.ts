@@ -10,6 +10,14 @@ export const FrightlessBirdsProject: project = {
     developmentTime: "3 Months",
     developmentStartDate: "Mar 2026",
     teamMembers: "5 (+1 temporary) members",
+    contributions:[
+        "Being the lead programmer & git master",
+        "Core player actions design (Group effort)",
+        "Minigame Framework",
+        "Brace rework",
+        "Frozen Feathers (Minigame)",
+        "Kiwi model"
+    ]
 }
 
 export const MeerMomoProject: project = {
@@ -19,7 +27,19 @@ export const MeerMomoProject: project = {
     skills: [allSkills["unity"], allSkills["csharp"], allSkills["seriousGame"]],
     developmentTime: "1.5 months",
     developmentStartDate: "May 2025",
-    teamMembers: "5 members"
+    teamMembers: "5 members",
+    contributions: [
+        "Designed and implemented a modular fish system which can generate random fish from a pool of body parts",
+        "Reworked the fishing rod to enable many quality of life changes such as attaching the fish to the hook when caught",
+        "Primary communicator with stakeholder"
+    ],
+    externalLinks: [
+        {
+            label: "View trailer",
+            link: "https://www.youtube.com/watch?v=QFpYwiTrIBI",
+            imageUrl:"/assets/icons/Play.svg"
+        }
+    ]
 }
 
 export const HogidProject: project = {
@@ -29,5 +49,18 @@ export const HogidProject: project = {
     skills: [allSkills["unity"], allSkills["csharp"]],
     developmentTime: "4 days",
     developmentStartDate: "May 2025",
-    teamMembers: "2 members"
+    teamMembers: "2 members",
+    contributions: [
+        "Designed and implemented the item placement system",
+        "Designed and implemented the rules system",
+        "(Co)Designed the puzzles",
+        "Designed and implemented the audio"
+    ],
+    externalLinks: [
+        {
+            label:"Play game",
+            link: "https://nebbdev.itch.io/hogid",
+            imageUrl: "/assets/icons/Controller.svg"
+        }
+    ]
 }

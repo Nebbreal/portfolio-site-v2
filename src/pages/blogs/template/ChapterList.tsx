@@ -1,7 +1,7 @@
 import type {Chapter} from "../../../types/chapter.ts";
 
 type ChapterListProps = {
-    chapters: Chapter[];
+    chapters?: Chapter[];
 }
 
 function ChapterList(props: ChapterListProps) {
@@ -12,13 +12,14 @@ function ChapterList(props: ChapterListProps) {
             </div>
 
             <div className={"p-2"}>
-                {props.chapters.map((chapter: Chapter, index) => {
+                {props.chapters ? props.chapters.map((chapter: Chapter, index) => {
                     return (
                         <a href={"#" + chapter.id} key={index}>
                             <h3>- {chapter.label}</h3>
                         </a>
                     )
-                })}
+                }):<p className={"text-lowlight"}>No blog article has been added yet</p>
+                }
             </div>
 
         </div>
