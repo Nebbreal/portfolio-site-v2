@@ -35,7 +35,7 @@ function Layout(){
                 })}
             </div>
 
-            <div className={"lg:mx-12 mx-3 mt-2 mb-2 min-h-[80vh]"}>
+            <div className={"lg:mx-12 mx-3 mt-2 mb-2 min-h-[78vh]"}>
                 <Outlet/>
             </div>
 
