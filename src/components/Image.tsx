@@ -18,7 +18,7 @@ function Image(props: ImageProps) {
                     <h3>X</h3>
                 </div>
 
-                <img src={props.imageUrl} alt={props.alt} />
+                <img className={"bg-background"} src={props.imageUrl} alt={props.alt} />
             </div>
             <ImageOverlay title={props.title} imageUrl={props.imageUrl} alt={props.alt} isHidden={isOverlayHidden} setIsHidden={setIsOverlayHidden} />
         </>

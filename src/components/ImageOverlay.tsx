@@ -20,7 +20,7 @@ function ImageOverlay(props: ImageOverlayProps) {
                     </button>
                 </div>
 
-                <img className={"max-w-[90vw] max-h-[90vh] lg:max-w-[70vw] lg:max-h-[70vh] w-auto h-auto"} src={props.imageUrl} alt={props.alt} />
+                <img className={"max-w-[90vw] max-h-[90vh] lg:max-w-[70vw] lg:max-h-[70vh] w-auto h-auto bg-background"} src={props.imageUrl} alt={props.alt} />
             </div>
         </div>
     )
