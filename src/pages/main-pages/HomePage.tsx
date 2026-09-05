@@ -5,8 +5,13 @@ import HomePageHighlight from "../../components/HomePageHighlight.tsx";
 import {FrightlessBirdsProject} from "../../data/projects.ts";
 
 function HomePage() {
+    const kittyASCI = `      |\\      _,,,---,,_
+ZZZzz /,\`.-'\`'    -.  ;-;;,_
+     |,4-  ) )-,_. ,\\ (  \`'-'
+    '---''(_/--'  \`-'\\_)`
+
     return (
-        <div className={"lg:flex lg:justify-between min-h-screen"}>
+        <div className={"lg:flex lg:justify-between min-h-[94vh]"}>
             <div>
                 <h1>Hoi o/</h1>
                 <h1>I'm <span className={"text-primary"}>Demiën van Laarhoven</span></h1>
@@ -35,6 +40,12 @@ function HomePage() {
             <div className={"flex flex-col gap-y-5"}>
                 <h2>Highlighted project(s)</h2>
                 <HomePageHighlight project={FrightlessBirdsProject} blogUrl={"projects/frightlessbirds"} />
+            </div>
+
+            <div className={"absolute h-full w-full flex flex-col items-center justify-center -z-50"}>
+                <pre className={"invisible lg:visible text-lowlight"}>
+                    {kittyASCI}
+                </pre>
             </div>
         </div>
     )
