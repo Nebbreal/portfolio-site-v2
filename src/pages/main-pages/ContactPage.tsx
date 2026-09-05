@@ -6,7 +6,7 @@ function ContactPage(){
             <h1>Contact</h1>
             <div className={"flex flex-col items-center"}>
                 <h2>Email</h2>
-                <a href={"mailto:demien401@gmail.com"}><p className={"text-secondary"}>demien401@gmail.com</p></a>
+                <a href={"mailto:demien401@gmail.com"}><p className={"text-secondary underline"}>demien401@gmail.com</p></a>
             </div>
 
             <div className={"flex flex-col items-center"}>
