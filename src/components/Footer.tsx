@@ -6,7 +6,12 @@ function Footer() {
         <div className={"flex ms-2 my-1"}>
             <div>
                 <h2 className={"text-lowlight"}>Demiën van Laarhoven</h2>
-                <h3 className={"text-lowlight"}>Gameplay programmer</h3>
+                <div className={"flex"}>
+                    <h3 className={"text-lowlight"}>Gameplay programmer</h3>
+                    <h3 className={"text-lowlight px-2"}>|</h3>
+                    <h3 className={"text-lowlight"}>Fontys ICT</h3>
+                </div>
+
                 <a href={"mailto:demien401@gmail.com"}>
                     <h3 className={"text-secondary"}>demien401@gmail.com</h3>
                 </a>
