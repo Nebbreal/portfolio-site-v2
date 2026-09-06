@@ -5,11 +5,18 @@ import HomePageHighlight from "../../components/HomePageHighlight.tsx";
 import {FrightlessBirdsProject} from "../../data/projects.ts";
 
 function HomePage() {
-    const kittyASCI = `      |\\      _,,,---,,_
-ZZZzz /,\`.-'\`'    -.  ;-;;,_
-     |,4-  ) )-,_. ,\\ (  \`'-'
-    '---''(_/--'  \`-'\\_)`
-
+    const kittyASCI = `
+     ,_     _
+     |\\\\_,-~/
+     / _  _ |    ,--.
+    (  @  @ )   / ,-'
+     \\  _T_/-._( (
+     /         \`. \\
+    |         _  \\ |
+     \\ \\ ,  /      |
+      || |-_\\__   /
+     ((_/\`(____,-'
+     `
     return (
         <div className={"lg:flex lg:justify-between min-h-[94vh]"}>
             <div>
