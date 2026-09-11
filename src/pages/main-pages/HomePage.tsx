@@ -18,7 +18,7 @@ function HomePage() {
      ((_/\`(____,-'
      `
     return (
-        <div className={"lg:flex lg:justify-between min-h-[94vh]"}>
+        <div className={"lg:flex lg:justify-between relative"}>
             <div>
                 <h1>Hoi o/</h1>
                 <h1>I'm <span className={"text-primary"}>Demiën van Laarhoven</span></h1>
@@ -38,7 +38,7 @@ function HomePage() {
                     </Button>
                 </div>
 
-                <div className={"mt-20"}>
+                <div>
                     <h3>//Say hi to Luna for me :)</h3>
                     <Image title={"Luna.jpg"} imageUrl={"/assets/images/other/Luna.jpg"} alt={"A picture of my dog named Luna"}/>
                 </div>
@@ -49,10 +49,10 @@ function HomePage() {
                 <HomePageHighlight project={FrightlessBirdsProject} blogUrl={"projects/frightlessbirds"} />
             </div>
 
-            <div className={"absolute h-full w-full flex flex-col items-center justify-center -z-50"}>
-                <pre className={"invisible lg:visible text-lowlight"}>
-                    {kittyASCI}
-                </pre>
+            <div className={"absolute inset-0 h-full w-full flex flex-col items-center justify-center -z-50"}>
+                    <pre className={"invisible lg:visible text-lowlight"}>
+                        {kittyASCI}
+                    </pre>
             </div>
         </div>
     )
