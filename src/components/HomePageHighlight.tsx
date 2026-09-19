@@ -10,7 +10,7 @@ function HomePageHighlight(props: HomePageHighlightProps) {
     const project = props.project;
     return (
         <Link to={props.blogUrl}>
-            <div className={"primary-border hover:cursor-pointer transition-transform hover:scale-110"}>
+            <div className={"primary-border bg-primary hover:cursor-pointer transition-transform hover:scale-110"}>
                 <div className={"flex justify-between bg-primary"}>
                     <h3 className={"wrap-anywhere"}>{project.title}.exe</h3>
                     <h3>X</h3>
