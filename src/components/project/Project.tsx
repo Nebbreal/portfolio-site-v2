@@ -1,6 +1,7 @@
 import {type project} from "../../types/project.ts";
 import InfoCard from "./InfoCard.tsx";
 import InfoListCard from "./InfoListCard.tsx";
+import Button from "../Button.tsx";
 
 type ProjectProps={
     project: project
@@ -28,6 +29,12 @@ function Project(props: ProjectProps) {
                             <InfoCard title={"Skills"} infoEntries={project.skills} />
                         </div>
                     </div>
+                </div>
+
+                <div className={"flex h-full justify-center items-end mt-5"}>
+                    <Button className={"w-full"}>
+                        <h2>Read Blog</h2>
+                    </Button>
                 </div>
             </div>
         </div>
