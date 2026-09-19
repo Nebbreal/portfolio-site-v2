@@ -11,11 +11,13 @@ import FrightlessBirdsBlog from "./pages/blogs/FrightlessBirdsBlog.tsx";
 import ContactPage from "./pages/main-pages/ContactPage.tsx";
 import MeerMomoBlog from "./pages/blogs/MeerMomoBlog.tsx";
 import HogidBlog from "./pages/blogs/HogidBlog.tsx";
+import ErrorPage from "./pages/ErrorPage.tsx";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Layout />,
+        errorElement: <ErrorPage />,
         children:[
             {
                 index: true,
