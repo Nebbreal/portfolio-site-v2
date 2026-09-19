@@ -1,5 +1,6 @@
 import {type project} from "../../types/project.ts";
 import InfoCard from "./InfoCard.tsx";
+import InfoListCard from "./InfoListCard.tsx";
 
 type ProjectProps={
     project: project
@@ -22,22 +23,7 @@ function Project(props: ProjectProps) {
                     <div className={"grid grid-cols-2 gap-x-5 w-full content-stretch"}>
                         <div>
                             <h2>Info</h2>
-                            <InfoCard title={"DevInfo"} infoEntries={
-                                [
-                                    {
-                                        label: project.developmentTime,
-                                        imageUrl: "/assets/icons/Clock.svg"
-                                    },
-                                    {
-                                        label: project.developmentStartDate,
-                                        imageUrl: "/assets/icons/Calendar.svg"
-                                    },
-                                    {
-                                        label: project.teamMembers,
-                                        imageUrl: "/assets/icons/Person.svg"
-                                    }
-                                ]
-                            }/>
+                            <InfoListCard title={"Contributions"} infoListEntries={project.contributions} />
                         </div>
                         <div>
                             <h2>Skills</h2>

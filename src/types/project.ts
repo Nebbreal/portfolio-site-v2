@@ -1,4 +1,5 @@
 import type {Dictionary, ListEntryComponent} from "../helpers/interfaces.ts";
+import type {listEntry} from "./listEntry.ts";
 
 export type project = {
     title: string
@@ -8,7 +9,7 @@ export type project = {
     developmentTime: string
     developmentStartDate: string
     teamMembers: string
-    contributions: string[]
+    contributions: listEntry[]
     externalLinks?: externalLink[]
 }
 
