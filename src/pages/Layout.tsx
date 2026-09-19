@@ -28,14 +28,14 @@ function Layout(){
     }, [path]);
 
     return (
-        <div className="primary-border min-h-screen">
+        <div className="primary-border min-h-screen flex flex-col">
             <div className={"flex bg-primary"}>
                 {headerNavigationNodes.map((node) => {
                     return node
                 })}
             </div>
 
-            <div className={"lg:mx-12 mx-3 mt-2 mb-2 min-h-[78vh]"}>
+            <div className={"lg:mx-12 mx-3 mt-2 mb-2 flex-1"}>
                 <Outlet/>
             </div>
 

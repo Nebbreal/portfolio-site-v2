@@ -11,12 +11,12 @@ export const FrightlessBirdsProject: project = {
     developmentStartDate: "Mar 2026",
     teamMembers: "5 (+1 temporary) members",
     contributions:[
-        "Being the lead programmer & git master",
-        "Core player actions design (Group effort)",
-        "Minigame Framework",
-        "Brace rework",
-        "Frozen Feathers (Minigame)",
-        "Kiwi model"
+        {entry: "Being the lead programmer & git master"},
+        {entry: "Core player actions design (Group effort)"},
+        {entry: "Minigame Framework"},
+        {entry: "Brace rework"},
+        {entry: "Frozen Feathers (Minigame)"},
+        {entry: "Kiwi model"}
     ]
 }
 
@@ -29,9 +29,9 @@ export const MeerMomoProject: project = {
     developmentStartDate: "May 2025",
     teamMembers: "5 members",
     contributions: [
-        "Designed and implemented a modular fish system which can generate random fish from a pool of body parts",
-        "Reworked the fishing rod to enable many quality of life changes such as attaching the fish to the hook when caught",
-        "Primary communicator with stakeholder"
+        {entry: "A modular fish generation system"},
+        {entry: "Reworked the fishing rod logic to enable many quality of life changes"},
+        {entry: "Primary communicator with stakeholder"}
     ],
     externalLinks: [
         {
@@ -51,10 +51,21 @@ export const HogidProject: project = {
     developmentStartDate: "May 2025",
     teamMembers: "2 members",
     contributions: [
-        "Designed and implemented the item placement system",
-        "Designed and implemented the rules system",
-        "(Co)Designed the puzzle",
-        "Designed and implemented the audio"
+        {
+            entry: "Designed and implemented the: ",
+            children: [
+                {
+                    entry: "Rules system"
+                },
+                {
+                    entry: "Item Placement System"
+                },
+                {
+                    entry: "Audio"
+                }
+            ]
+        },
+        {entry: "(Co)Designed the puzzle"}
     ],
     externalLinks: [
         {
