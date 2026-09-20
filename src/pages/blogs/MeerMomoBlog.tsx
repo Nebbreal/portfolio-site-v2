@@ -11,7 +11,7 @@ function MeerMomoBlog() {
                 reward players get to keep them engaged with the game for longer periods of time.
             </p>
 
-            <Image title={"FishingGameReferences.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""} />
+            <Image title={"FishingGameReferences.png"} imageUrl={"/assets/images/projects/blogs/meer-momo/FishingGameReferences.png"} alt={"The capsule images of Stardew Valley and WEBFISHING side by side"} />
             <p>
                 When looking at other games that feature fishing like
                 <span className={"text-secondary"}> Stardew Valley </span>
@@ -25,19 +25,21 @@ function MeerMomoBlog() {
                 we needed a system that allows us to create <span className={"text-secondary"}>a large amount of unique fish </span>
                 while only requiring <span className={"text-secondary"}> a low amount of art assets</span>.
             </p>
-
-            <Image title={"ModularSpriteReferences.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""} />
+            <br/>
             <p>
                 In my research I landed on 2 paths I could take for the Modular Fish System,
                 a modular sprint sheet or a GameObject with handles approach.
-                There are of course more ways to tackle this problem however these seemed to fit this case best.
+                There are more ways to tackle this problem however these seemed to fit this case best.
             </p>
             <br/>
 
             <h3>Modular sprite sheet</h3>
-            <Image title={"ModularSpriteSheetExample.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""}/>
+            <Image title={"ModularSpriteReference.png"} imageUrl={"/assets/images/projects/blogs/meer-momo/ModularSpriteReference.png"} alt={"Depicted are 2 spritesheets, 1 of possible human heads and the other of possible human bodies. Next to it is an arrow pointing toward a human consisting of 2 randomly selected parts. In the bottom left there is text saying 'Credit: Code Monkey on Youtube'"} />
             <p>
                 The modular sprite sheet approach splits the fish sprite up into one spritesheet for each body part.
+            </p>
+            <br/>
+            <p>
                 When a sprite needs to be created the system slices one of hte variations from each of the spritesheets.
                 These sprites then get put together to create a new unique sprite.
             </p>
@@ -49,7 +51,7 @@ function MeerMomoBlog() {
             <br/>
 
             <h3>GameObject with handles</h3>
-            <Image title={"GameObjectExample.jpg"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""}/>
+            <Image title={"GameObjectExample.png"} imageUrl={"/assets/images/projects/blogs/meer-momo/GameObjectExample.png"} alt={"A grey cube with smaller red cubes attached on top and to the right side of it."}/>
             <p>
                 This approach makes use of Unity's object structure to position and assign parts.
             </p>
@@ -69,7 +71,7 @@ function MeerMomoBlog() {
             <p>
                 However the drawback of this method is that it requires
                 <span className={"text-secondary"}> a bit more initial setup</span> as specific fish bodies
-                need to have their part slots manually assigned
+                need to have their part slots manually assigned.
             </p>
             <br/>
 
@@ -77,26 +79,26 @@ function MeerMomoBlog() {
             <p>
                 For Meer Momo I chose to use the <span className={"text-secondary"}>GameObject</span> approach due to its enhanced control, customization and scalability
             </p>
-            <Image title={"MFSFishBase.png"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""} />
+            <Image title={"MFSFishBase.png"} imageUrl={"/assets/images/projects/blogs/meer-momo/MFSFishBase.png"} alt={"A body of a fish covered in red squared on the places where the fish's eyes, fins and mouth should be."} />
             <p>
                 In the GameObject approach developers can provide the system with fish bases which can contain an infinite
                 amount of child parts. These child parts require a tag so that the system knows which sprite to slot into there.
             </p>
 
-            <Image title={"MFSEditorParts.png"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""} />
+            <Image title={"MFSEditorParts.png"} imageUrl={"/assets/images/projects/blogs/meer-momo/MFSEditorParts.png"} alt={"An image of the Unity editor showing multiple lists of fish bases and parts slotted into fields for the system to use."} />
             <p>
                 In the Unity editor developers are able to configure which sprites are able to be selected by the system.
             </p>
 
-            <Image title={"ConfigurationFields.png"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""}/>
+            <Image title={"MFSEditorConfiguration.png"} imageUrl={"/assets/images/projects/blogs/meer-momo/MFSEditorConfiguration.png"} alt={"An image of the Unity editor showcasing various sliders to configure the system with. The configurable fields are: Fish size, Shiftable Base Chance, Shiftable Part chance, Hat chance, Minimum value, Minimum saturation"}/>
             <p>
                 Configurations such as the size of the fish, chance for a hat or chance that a color shiftable sprite
                 gets picked can also be set here.
             </p>
 
-            <Image title={"GeneratedFishExamples.webp"} imageUrl={"/assets/images/other/Luna2.jpg"} alt={""} />
+            <Image title={"GeneratedFishExamples.webp"} imageUrl={"/assets/images/projects/blogs/meer-momo/MFSShowcase.webp"} alt={"An animated picture showing uniquely colored fish being generated. A panel showcasing the parts selected can be found in the bottom left and a configuration panel in the bottom right."} />
             <p>
-                This all results in a system where a small pool of sprites can create a large amount of Fish
+                This all results in a system where a small pool of sprites can create a large amount of Fish.
             </p>
         </BlogBase>
     )
