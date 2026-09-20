@@ -35,6 +35,11 @@ export const MeerMomoProject: project = {
     ],
     externalLinks: [
         {
+            label: "Modular Fish System demo",
+            link: "https://nebbdev.itch.io/modular-fish-system-showcase",
+            imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
+        },
+        {
             label: "View trailer",
             link: "https://www.youtube.com/watch?v=QFpYwiTrIBI",
             imageUrl:"/assets/icons/Play.svg"

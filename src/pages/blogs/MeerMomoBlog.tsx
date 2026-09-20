@@ -1,11 +1,20 @@
 import BlogBase from "./template/BlogBase.tsx";
 import {MeerMomoProject} from "../../data/projects.ts";
 import Image from "../../components/Image.tsx";
+import Button from "../../components/Button.tsx";
+import type {Chapter} from "../../types/chapter.ts";
 
 function MeerMomoBlog() {
+    const chapters: Chapter[] = [
+        {
+            label: "The Modular Fish System",
+            id: "The Modular Fish System",
+        }
+    ];
+
     return (
-        <BlogBase projectObj={MeerMomoProject}>
-            <h2>The Modular Fish System</h2>
+        <BlogBase projectObj={MeerMomoProject} chapters={chapters}>
+            <h2 id={"The Modular Fish System"}>The Modular Fish System</h2>
             <p>
                 During development of Meer Momo research on other Pillo games showed us that we needed variety in the
                 reward players get to keep them engaged with the game for longer periods of time.
@@ -100,6 +109,13 @@ function MeerMomoBlog() {
             <p>
                 This all results in a system where a small pool of sprites can create a large amount of Fish.
             </p>
+            <br/>
+            <p>A demo of this system can be found on itch.io</p>
+            <a href={"https://nebbdev.itch.io/modular-fish-system-showcase"} target={"_blank"}>
+                <Button imageUrl={"/assets/images/external-icons/ItchIoLogo.svg"}>
+                    <h3>Play Modular Fish System demo</h3>
+                </Button>
+            </a>
         </BlogBase>
     )
 }
