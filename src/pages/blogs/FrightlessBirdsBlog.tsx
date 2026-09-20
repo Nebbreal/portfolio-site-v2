@@ -141,7 +141,7 @@ function FrightlessBirdsBlog() {
                     </ul>
                     <li>PlayerManager</li>
                     <ul>
-                        <li>Handles player related logic such as freezing them at during minigame countdowns.</li>
+                        <li>Handles player related logic such as freezing them during minigame countdowns.</li>
                     </ul>
                     <li>ScoreboardManager</li>
                     <ul>

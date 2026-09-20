@@ -12,7 +12,7 @@ function ExternalButtonsList(props : ExternalButtonsListProps) {
                 <h3>External.list</h3>
             </div>
 
-            <div className={"p-2 flex justify-center"}>
+            <div className={"p-2 flex flex-col gap-y-3 justify-center"}>
                 {props.links.map((link, index) => {
                     return (
                         <a href={link.link} key={index} target="_blank">

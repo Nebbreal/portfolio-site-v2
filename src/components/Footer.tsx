@@ -19,13 +19,16 @@ function Footer() {
                 </div>
                 <div className={"ms-4"}>
                     <h2 className={"text-lowlight"}>Find me at</h2>
-                    <div className={"flex gap-x-2"}>
+                    <div className={"flex flex-col lg:flex-row gap-x-2 gap-y-1"}>
                         <a href={"https://github.com/Nebbreal"} target="_blank" rel="noopener noreferrer">
                             <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"} imageAlt={"Github Logo"}/>
                         </a>
                         <a href={"https://www.linkedin.com/in/demi%C3%ABn-van-laarhoven/"} target="_blank"
                            rel="noopener noreferrer">
                             <Button imageUrl={"/assets/images/external-icons/LinkedInLogo.svg"} imageAlt={"LinkedIn logo"}/>
+                        </a>
+                        <a href={"https://nebbdev.itch.io/"} target={"_blank"}>
+                            <Button className={"w-50"} imageUrl={"/assets/images/external-icons/ItchIoLogo.svg"}/>
                         </a>
                     </div>
                 </div>

@@ -35,6 +35,16 @@ export const MeerMomoProject: project = {
     ],
     externalLinks: [
         {
+            label: "Modular Fish System demo",
+            link: "https://nebbdev.itch.io/modular-fish-system-showcase",
+            imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
+        },
+        {
+          label: "Modular Fish System Code",
+          link: "https://github.com/Nebbreal/Modular-Fish-System-Showcase",
+          imageUrl: "/assets/images/external-icons/GithubLogo.svg"
+        },
+        {
             label: "View trailer",
             link: "https://www.youtube.com/watch?v=QFpYwiTrIBI",
             imageUrl:"/assets/icons/Play.svg"
@@ -71,7 +81,7 @@ export const HogidProject: project = {
         {
             label:"Play game",
             link: "https://nebbdev.itch.io/hogid",
-            imageUrl: "/assets/icons/Controller.svg"
+            imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
         }
     ]
 }
