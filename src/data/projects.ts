@@ -40,6 +40,11 @@ export const MeerMomoProject: project = {
             imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
         },
         {
+          label: "Modular Fish System Code",
+          link: "https://github.com/Nebbreal/Modular-Fish-System-Showcase",
+          imageUrl: "/assets/images/external-icons/GithubLogo.svg"
+        },
+        {
             label: "View trailer",
             link: "https://www.youtube.com/watch?v=QFpYwiTrIBI",
             imageUrl:"/assets/icons/Play.svg"
