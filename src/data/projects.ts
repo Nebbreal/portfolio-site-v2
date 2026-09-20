@@ -76,7 +76,7 @@ export const HogidProject: project = {
         {
             label:"Play game",
             link: "https://nebbdev.itch.io/hogid",
-            imageUrl: "/assets/icons/Controller.svg"
+            imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
         }
     ]
 }
