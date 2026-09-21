@@ -31,7 +31,7 @@ function Project(props: ProjectProps) {
                     </div>
                 </div>
 
-                <div className={"flex h-full justify-center items-end mt-5 gap-x-5"}>
+                <div className={"flex flex-col lg:flex-row h-full justify-center items-end mt-5 gap-x-5 gap-y-2"}>
                     {project.externalLinks && (
                         <a className={"w-full"} href={project.externalLinks[0].link} target={"_blank"} onClick={(e) => e.stopPropagation()}>
                             <Button imageUrl={project.externalLinks[0].imageUrl} className={"w-full"}>
