@@ -3,6 +3,7 @@ import {type ReactNode, useEffect, useState} from "react";
 import HeaderNavigationButton from "../components/layout/HeaderNavigationButton.tsx";
 import {titleCaseWord} from "../helpers/textHelpers.ts";
 import Footer from "../components/Footer.tsx";
+import ScrollToTopOnPageSwitch from "../components/layout/ScrollToTopOnPageSwitch.tsx";
 
 function Layout(){
     let path = useLocation().pathname;
@@ -28,19 +29,23 @@ function Layout(){
     }, [path]);
 
     return (
-        <div className="primary-border min-h-screen flex flex-col">
-            <div className={"flex bg-primary"}>
-                {headerNavigationNodes.map((node) => {
-                    return node
-                })}
-            </div>
+        <>
+            <ScrollToTopOnPageSwitch />
+            <div className="primary-border min-h-screen flex flex-col">
+                <div className={"flex bg-primary"}>
+                    {headerNavigationNodes.map((node) => {
+                        return node
+                    })}
+                </div>
 
-            <div className={"lg:mx-12 mx-3 mt-2 mb-2 flex-1"}>
-                <Outlet/>
-            </div>
+                <div className={"lg:mx-12 mx-3 mt-2 mb-2 flex-1"}>
+                    <Outlet/>
+                </div>
 
-            <Footer/>
-        </div>
+                <Footer/>
+            </div>
+        </>
+
     )
 }
 

@@ -26,16 +26,16 @@ function HomePage() {
                 <h2>I am mainly experienced in <span className={"text-secondary"}>Unity</span>.</h2>
 
                 <div className={"flex flex-col mt-10 gap-5"}>
-                    <Button className={"max-w-80"}>
-                        <Link to="/projects">
+                    <Link to="/projects">
+                        <Button className={"w-full max-w-80"}>
                             <h1>Projects</h1>
-                        </Link>
-                    </Button>
-                    <Button className={"max-w-80"}>
-                        <Link to="/contact">
+                        </Button>
+                    </Link>
+                    <Link to="/contact">
+                        <Button className={"w-full max-w-80"}>
                             <h1>Contact</h1>
-                        </Link>
-                    </Button>
+                        </Button>
+                    </Link>
                 </div>
 
                 <div>
