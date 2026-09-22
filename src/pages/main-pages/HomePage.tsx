@@ -2,7 +2,7 @@ import Button from "../../components/Button.tsx";
 import Image from "../../components/Image.tsx";
 import {Link} from "react-router";
 import HomePageHighlight from "../../components/HomePageHighlight.tsx";
-import {FrightlessBirdsProject} from "../../data/projects.ts";
+import {FrightlessBirdsProject, MeerMomoProject} from "../../data/projects.ts";
 
 function HomePage() {
     const kittyASCI = `
@@ -47,6 +47,7 @@ function HomePage() {
             <div className={"flex flex-col gap-y-5"}>
                 <h2>Highlighted project(s)</h2>
                 <HomePageHighlight project={FrightlessBirdsProject} blogUrl={"projects/frightlessbirds"} />
+                <HomePageHighlight project={MeerMomoProject} blogUrl={"projects/meermomo"} />
             </div>
 
             <div className={"absolute inset-0 h-full w-full flex flex-col items-center justify-center -z-50"}>
