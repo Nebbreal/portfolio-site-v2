@@ -16,7 +16,7 @@ function MeerMomoBlog() {
         <BlogBase projectObj={MeerMomoProject} chapters={chapters}>
             <h2 id={"The Modular Fish System"}>The Modular Fish System</h2>
             <p>
-                During development of Meer Momo we research did on other Pillo games to see how they handled rewarding the player.
+                During development of Meer Momo we did research on other Pillo games to see how they handled rewarding the player.
                 That showed us that we needed <span className={"text-secondary"}>variety in the reward players get </span>
                 to keep them engaged with the game for
                 longer periods of time.
