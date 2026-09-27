@@ -19,7 +19,7 @@ function Card(props: CardProps) {
     }
 
     return (
-        <div onClick={(e) => props.onClick?.(e)} className={"max-w-100 primary-border bg-primary hover:cursor-zoom-in"}>
+        <div onClick={(e) => props.onClick?.(e)} className={"primary-border bg-primary hover:cursor-zoom-in"}>
             <div className={"flex justify-between bg-primary"}>
                 <h3 className={"wrap-anywhere"}>{props.title}</h3>
 
