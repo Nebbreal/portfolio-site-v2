@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div>
             <hr className={"text-primary border-3"}/>
-            <div className={"flex ms-2 my-1"}>
+            <div className={"flex flex-col lg:flex-row ms-2 my-1"}>
                 <div>
                     <h2 className={"text-lowlight"}>Demiën van Laarhoven</h2>
                     <div className={"flex"}>
@@ -17,9 +17,9 @@ function Footer() {
                         <h3 className={"text-secondary"}>demien401@gmail.com</h3>
                     </a>
                 </div>
-                <div className={"ms-4"}>
+                <div className={"lg:ms-4"}>
                     <h2 className={"text-lowlight"}>Find me at</h2>
-                    <div className={"flex flex-col lg:flex-row gap-x-2 gap-y-1"}>
+                    <div className={"flex lg:flex-col lg:flex-row gap-x-2 gap-y-1"}>
                         <a href={"https://github.com/Nebbreal"} target="_blank" rel="noopener noreferrer">
                             <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"} imageAlt={"Github Logo"}/>
                         </a>
