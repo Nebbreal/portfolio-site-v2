@@ -35,9 +35,9 @@ export const MeerMomoProject: project = {
     ],
     externalLinks: [
         {
-            label: "Modular Fish System demo",
+            label: "Play system demo",
             link: "https://nebbdev.itch.io/modular-fish-system-showcase",
-            imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
+            imageUrl: "/assets/icons/Controller.svg"
         },
         {
           label: "Modular Fish System Code",
@@ -81,7 +81,7 @@ export const HogidProject: project = {
         {
             label:"Play game",
             link: "https://nebbdev.itch.io/hogid",
-            imageUrl: "/assets/images/external-icons/ItchIoLogo.svg"
+            imageUrl: "/assets/icons/Controller.svg"
         }
     ]
 }

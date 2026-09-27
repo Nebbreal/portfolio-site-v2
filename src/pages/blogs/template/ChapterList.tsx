@@ -1,4 +1,5 @@
 import type {Chapter} from "../../../types/chapter.ts";
+import Card from "../../../components/Card.tsx";
 
 type ChapterListProps = {
     chapters?: Chapter[];
@@ -6,23 +7,22 @@ type ChapterListProps = {
 
 function ChapterList(props: ChapterListProps) {
     return (
-        <div className={"primary-border"}>
-            <div className={"flex justify-between bg-primary"}>
-                <h3>Chapters.list</h3>
-            </div>
-
+        <Card title={"Chapters.List"} disableMinimize>
             <div className={"p-2"}>
-                {props.chapters ? props.chapters.map((chapter: Chapter, index) => {
-                    return (
-                        <a href={"#" + chapter.id} key={index}>
-                            <h3>- {chapter.label}</h3>
-                        </a>
-                    )
-                }):<p className={"text-lowlight"}>No blog article has been added yet</p>
+                {
+                    props.chapters ? props.chapters.map((chapter: Chapter, index) =>
+                        {
+                            return (
+                                <a href={"#" + chapter.id} key={index}>
+                                    <h3>- {chapter.label}</h3>
+                                </a>
+                            )
+                        }
+                    ) :
+                    <p className={"text-lowlight"}>No blog article has been added yet</p>
                 }
             </div>
-
-        </div>
+        </Card>
     )
 }
 

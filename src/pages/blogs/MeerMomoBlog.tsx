@@ -115,9 +115,9 @@ function MeerMomoBlog() {
                 can create a large amount of Fish.
             </p>
             <br/>
-            <p>A demo of this system can be found on itch.io</p>
+            <p>A demo of this system can be found on itch.io.</p>
             <a href={"https://nebbdev.itch.io/modular-fish-system-showcase"} target={"_blank"}>
-                <Button imageUrl={"/assets/images/external-icons/ItchIoLogo.svg"}>
+                <Button imageUrl={"/assets/icons/Controller.svg"}>
                     <h3>Play Modular Fish System demo</h3>
                 </Button>
             </a>
