@@ -14,12 +14,12 @@ function HomePage() {
                 <h2>I am mainly experienced in <span className={"text-secondary"}>Unity</span>.</h2>
 
                 <div className={"flex flex-col mt-10 gap-5"}>
-                    <Link to="/projects">
+                    <Link to="/projects" className={"max-w-80"}>
                         <Button className={"w-full max-w-80"}>
                             <h1>Projects</h1>
                         </Button>
                     </Link>
-                    <Link to="/aboutme">
+                    <Link to="/aboutme" className={"max-w-80"}>
                         <Button className={"w-full max-w-80"}>
                             <h1>About me</h1>
                         </Button>
