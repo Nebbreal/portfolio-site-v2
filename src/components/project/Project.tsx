@@ -9,11 +9,11 @@ type ProjectProps={
 
 function Project(props: ProjectProps) {
     const project: project = props.project;
+
     return (
-        <div className={"primary-border bg-primary flex flex-1 flex-col hover:scale-110 lg:min-h-210 transition-transform hover:cursor-pointer"}>
+        <div className={"primary-border bg-primary flex flex-1 flex-col hover:scale-110 transition-transform hover:cursor-pointer"}>
             <div className={"flex justify-between bg-primary"}>
                 <h3>{project.title}.exe</h3>
-                <h3>X</h3>
             </div>
 
             <div className={"flex bg-background flex-col flex-1 px-2 py-2"}>

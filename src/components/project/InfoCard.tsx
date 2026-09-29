@@ -1,4 +1,5 @@
 import type {ListEntryComponent} from "../../helpers/interfaces.ts";
+import Card from "../Card.tsx";
 
 type InfoCardProps = {
     title: string;
@@ -7,11 +8,7 @@ type InfoCardProps = {
 
 function InfoCard(props: InfoCardProps) {
     return (
-        <div className={"primary-border"}>
-            <div className={"flex justify-between bg-primary"}>
-                <h3 className={"wrap-anywhere"}>{props.title}.Card</h3>
-                <h3>X</h3>
-            </div>
+        <Card title={props.title + ".Card"}>
             {props.infoEntries.map((entry, index) => {
                 return (
                     <div key={index} className={"flex px-1 py-2 items-center"}>
@@ -20,7 +17,7 @@ function InfoCard(props: InfoCardProps) {
                     </div>
                 )
             })}
-        </div>
+        </Card>
     )
 }
 

@@ -5,18 +5,6 @@ import HomePageHighlight from "../../components/HomePageHighlight.tsx";
 import {FrightlessBirdsProject, MeerMomoProject} from "../../data/projects.ts";
 
 function HomePage() {
-    const kittyASCI = `
-     ,_     _
-     |\\\\_,-~/
-     / _  _ |    ,--.
-    (  @  @ )   / ,-'
-     \\  _T_/-._( (
-     /         \`. \\
-    |         _  \\ |
-     \\ \\ ,  /      |
-      || |-_\\__   /
-     ((_/\`(____,-'
-     `
     return (
         <div className={"lg:flex lg:justify-between relative"}>
             <div>
@@ -26,14 +14,14 @@ function HomePage() {
                 <h2>I am mainly experienced in <span className={"text-secondary"}>Unity</span>.</h2>
 
                 <div className={"flex flex-col mt-10 gap-5"}>
-                    <Link to="/projects">
+                    <Link to="/projects" className={"max-w-80"}>
                         <Button className={"w-full max-w-80"}>
                             <h1>Projects</h1>
                         </Button>
                     </Link>
-                    <Link to="/contact">
+                    <Link to="/aboutme" className={"max-w-80"}>
                         <Button className={"w-full max-w-80"}>
-                            <h1>Contact</h1>
+                            <h1>About me</h1>
                         </Button>
                     </Link>
                 </div>
@@ -48,12 +36,6 @@ function HomePage() {
                 <h2>Highlighted project(s)</h2>
                 <HomePageHighlight project={FrightlessBirdsProject} blogUrl={"projects/frightlessbirds"} />
                 <HomePageHighlight project={MeerMomoProject} blogUrl={"projects/meermomo"} />
-            </div>
-
-            <div className={"absolute inset-0 h-full w-full flex flex-col items-center justify-center -z-50"}>
-                    <pre className={"invisible lg:visible text-lowlight"}>
-                        {kittyASCI}
-                    </pre>
             </div>
         </div>
     )

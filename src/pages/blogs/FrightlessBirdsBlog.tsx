@@ -40,10 +40,11 @@ function FrightlessBirdsBlog() {
                 <span className={"text-secondary"}> messing with your friends</span> and
                 <span className={"text-secondary"}> simplicity</span>.</p>
 
-            <Image title={"References.png"} imageUrl={baseImagePath + "FrightlessBirdsReferenceGames.jpg"}
-                   alt={"A picture of the banner images for Wii Party and Ultimate Chicken Horse"}
+            <Image title={"References.png"} imageUrl={baseImagePath + "FrightlessBirdsReferenceGames.png"}
+                   alt={"A picture of the banner images for Wii Party and Celeste"}
             />
-            <p>To achieve this we looked into how other games like Celeste kept their controls easy to understand
+            <p>
+                To achieve this we looked into how other games like Celeste kept their controls easy to understand
                 and how party games like Wii Party create chaos.
             </p>
             <br/>
@@ -69,7 +70,7 @@ function FrightlessBirdsBlog() {
                        "Dash dashes through attack, attack breaks the block and block deflects the dash"}
             />
             <p>These mechanics act in a pseudo rock paper scissors system to aid in creating a dynamic during
-                gameplay where players try to mess each other over while still providing counterplay.
+                gameplay where players try to mess each other over, while still providing counterplay.
             </p>
 
             <h2 id="Event System">Event System</h2>
@@ -101,7 +102,7 @@ function FrightlessBirdsBlog() {
             <Image title={"OnWinGameEditor.png"} imageUrl={baseImagePath + "OnWinGameEditor.png"}
                    alt={"A unity component showcasing the OnWinGame event being linked to a Scoreboard Manager script"}
             />
-            <p>GameEvents are referenced in scripts via a <span className={"text-secondary"}>serialized field</span>
+            <p>GameEvents are referenced in scripts via a <span className={"text-secondary"}>serialized field </span>
                 where a trigger for said event is needed which can get called with the <span className={"text-secondary"}>“Raise()”</span> method.</p>
 
             <Image title={"OnWinGameEventListener.png"} imageUrl={baseImagePath + "OnWinGameEventListener.png"}
@@ -133,7 +134,7 @@ function FrightlessBirdsBlog() {
             />
             <p>
                 The framework consists of the following parts which interact with each other by making use of a
-                <span className={"text-secondary"}> custom event system.</span>
+                <span className={"text-secondary"}> custom event system</span>.
                 <ul>
                     <li>GameManager</li>
                     <ul>
@@ -181,13 +182,13 @@ function FrightlessBirdsBlog() {
                         <br/>
                         This cost could be expressed in multiple ways, a few examples are:
                         <ul>
-                            <li>A durability system where the defensive mechanic loses durability and eventually breaks if not manager correctly.</li>
+                            <li>A durability system where the defensive mechanic loses durability and eventually breaks if not managed correctly.</li>
                             <li>A timer limiting the amount of time you can be in the defensive state.</li>
-                            <li> A clear move that counters the defensive mechanic</li>
-                            <li>Not fully blocking the damage but greatly reducing it instead.(This punishes staying in the defending stance infinitely).</li>
+                            <li>A clear move that counters the defensive mechanic</li>
+                            <li>Not fully blocking the damage but greatly reducing it instead. This punishes staying in the defending stance infinitely.</li>
                         </ul>
                     </li>
-                    <span className={"font-bold"}>or/and</span>s
+                    <span className={"font-bold"}>or/and</span>
                     <li>
                         <span className={"text-secondary"}>Requiring a precise timing</span> for defending the
                         incoming action.
@@ -225,7 +226,7 @@ function FrightlessBirdsBlog() {
                 cooldown.
                 <br/>
                 <br/>
-                This redesign was then tested again which this time resulted in a positive outcome due to players no longer getting confused at the functionality of the block.
+                This redesign was then tested again, which this time resulted in a positive outcome due to players no longer getting confused at the functionality of the block.
             </p>
 
             <h2 id="Frozen feathers(Minigame)">Frozen feathers(Minigame)</h2>
@@ -239,7 +240,7 @@ function FrightlessBirdsBlog() {
                 Due to Frozen Feathers being the very first minigame added I wanted it to be <span className={"text-secondary"}>simple to allow the core player mechanics to take the spotlight</span>.
                 <br/>
                 <br/>
-                So in Frozen Feathers players are standing on a ice platform in the ocean that is constantly melting(shrinking in size). However only one player can win which is why they are required to use the mechanics in the rock paper scissor system to come out on top and stay on top of the ice platform.
+                So in Frozen Feathers players are standing on a ice platform in the ocean that is constantly melting, making the platform shrink in size). However only one player can win which is why they are required to use the mechanics in the rock paper scissor system to come out on top and stay on top of the ice platform.
                 <br/>
                 <br/>
                 Just like the brace rework Frozen Feathers ties into the Minigame Framework to allow for easy tweaking.

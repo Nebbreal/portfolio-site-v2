@@ -56,6 +56,14 @@
     html {
         @apply scroll-smooth;
     }
+
+    ul {
+        @apply mb-1
+    }
+
+    li {
+        @apply mb-1
+    }
 }
 
 @layer components {

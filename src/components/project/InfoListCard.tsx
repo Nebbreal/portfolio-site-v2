@@ -1,4 +1,5 @@
 import type {listEntry} from "../../types/listEntry.ts";
+import Card from "../Card.tsx";
 
 type InfoCardProps = {
     title: string;
@@ -26,16 +27,11 @@ function InfoListCard(props: InfoCardProps) {
     }
 
     return (
-        <div className={"primary-border"}>
-            <div className={"flex justify-between bg-primary"}>
-                <h3 className={"wrap-anywhere"}>{props.title}.Card</h3>
-                <h3>X</h3>
-            </div>
-
+        <Card title={props.title + ".Card"}>
             <p>
                 {RenderListEntries(props.infoListEntries)}
             </p>
-        </div>
+        </Card>
     )
 }
 
