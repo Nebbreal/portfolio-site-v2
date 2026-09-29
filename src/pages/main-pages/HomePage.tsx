@@ -19,9 +19,9 @@ function HomePage() {
                             <h1>Projects</h1>
                         </Button>
                     </Link>
-                    <Link to="/contact">
+                    <Link to="/aboutme">
                         <Button className={"w-full max-w-80"}>
-                            <h1>Contact</h1>
+                            <h1>About me</h1>
                         </Button>
                     </Link>
                 </div>

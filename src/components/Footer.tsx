@@ -30,6 +30,10 @@ function Footer() {
                         <a href={"https://nebbdev.itch.io/"} target={"_blank"}>
                             <Button className={"w-50"} imageUrl={"/assets/images/external-icons/ItchIoLogo.svg"}/>
                         </a>
+                        <a href={"https://bsky.app/profile/nebbdev.bsky.social"} rel={"noopener noreferrer"}
+                           target={"_blank"}>
+                            <Button className={"w-full"} imageUrl={"/assets/images/external-icons/BskyLogo.svg"} />
+                        </a>
                     </div>
                 </div>
             </div>
