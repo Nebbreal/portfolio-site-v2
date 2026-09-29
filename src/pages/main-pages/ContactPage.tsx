@@ -23,27 +23,27 @@ function ContactPage(){
                     </p>
                     <br/>
                     <p>
-                        My first experience with (pc) games was when I was little. At that time, I started playing games like
-                        A Hat in Time and Minecraft which kickstarted my love for the medium.
-                        This love eventually turned into me getting into making mods, and
-                        in 2023, even a project to start learning my first game engine.
+                        My first experience with pc gaming started off early at the age of 9.
+                        At that time I was playing games such as A Hat in Time and Minecraft,
+                        these games kickstarted my love for the medium. This love led to me making mods
+                        and, in 2023, even a project to start learning my first game engine.
                     </p>
                     <br/>
                     <p>
                         Later on, I enrolled into Fontys ICT in Eindhoven,
                         where I've followed the <span className={"text-secondary"}>Game Design and Game Production </span>
-                        semesters. In those semesters I specialized in <span className={"text-secondary"}>programming gameplay and game systems</span>.
-                        During my study I've mainly used C# and Unity, however I have used other engines like Godot in
+                        semesters. Throughout my studies I've specialized in <span className={"text-secondary"}>programming gameplay and game systems</span>.
+                        I've mainly used C# and Unity, however I have used other engines like Godot in
                         my personal projects.
                     </p>
                     <br/>
                     <p>
-                        I would say that my biggest strength in programming is my rapid adaptability,
-                        next to being eager to learn allowing me to pick up new things pretty quickly.
+                        My biggest strength in programming is my rapid adaptability. This,
+                        combined with being eager to learn allows me to pick up new things pretty quickly.
                     </p>
                     <br/>
                     <p>
-                        Have any questions or want to connect? Feel free to reach out via email or through one of the
+                        Have any questions or want to connect? You can ask me anything via email or through one of the
                         buttons :).
                     </p>
                 </div>
