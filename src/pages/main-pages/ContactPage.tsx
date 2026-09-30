@@ -50,7 +50,6 @@ function ContactPage(){
                                 buttons :).
                             </p>
                         </div>
-
                     </Card>
 
                 </div>
