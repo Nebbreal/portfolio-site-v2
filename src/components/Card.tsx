@@ -29,7 +29,7 @@ function Card(props: CardProps) {
                     {isMinimized ? <h3>+</h3> : <h3>-</h3>}
                 </button>
             </div>
-            <div hidden={isMinimized} className={"bg-background"}>
+            <div className={"bg-background" + (isMinimized ? " invisible h-0" : "")} >
                 {props.children}
             </div>
         </div>
