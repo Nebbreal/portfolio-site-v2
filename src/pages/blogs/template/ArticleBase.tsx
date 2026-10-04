@@ -42,6 +42,7 @@ function ArticleBase(props: BlogBaseProps) {
                 </div>
                 <p>{project.summary}</p>
 
+                <br />
                 <h2 id="My contributions">My contributions</h2>
                 <p>
                     {RenderContributions(project.contributions)}

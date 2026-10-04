@@ -35,6 +35,7 @@ function FrightlessBirdsBlog() {
 
     return (
         <BlogBase projectObj={FrightlessBirdsProject} chapters={chapters}>
+            <br />
             <h2 id="Core player actions">Core player actions</h2>
             <p>When creating Frightless Birds we had 2 core design pillars,
                 <span className={"text-secondary"}> messing with your friends</span> and
@@ -73,6 +74,7 @@ function FrightlessBirdsBlog() {
                 gameplay where players try to mess each other over, while still providing counterplay.
             </p>
 
+            <br />
             <h2 id="Event System">Event System</h2>
             <p>
                 In previous projects I noticed that as the codebase grew code got messier and messier as time went
@@ -110,8 +112,8 @@ function FrightlessBirdsBlog() {
             />
             <p>This “Raise” method is linked to a GameEvent listener which in turn can be assigned to objects in editor.</p>
 
+            <br />
             <h2 id="Minigame framework">Minigame framework</h2>
-
             <p>
                 Since Frightless Birds is a minigame based party game we need a system to easily add new minigames.
                 <br/>
@@ -160,6 +162,7 @@ function FrightlessBirdsBlog() {
 
             </p>
 
+            <br />
             <h2 id="Brace Rework">Brace Rework</h2>
             <Image title={"Oldbrace.webp"} imageUrl={baseImagePath + "OldBrace.webp"}
                    alt={"A animated image showing the player having a parry like brace with them flashing blue when activating it"}
@@ -229,6 +232,7 @@ function FrightlessBirdsBlog() {
                 This redesign was then tested again, which this time resulted in a positive outcome due to players no longer getting confused at the functionality of the block.
             </p>
 
+            <br />
             <h2 id="Frozen feathers(Minigame)">Frozen feathers(Minigame)</h2>
             <p>For Frightless Birds I also desinged and created one of the minigames, that being Frozen Feathers.</p>
 

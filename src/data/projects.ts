@@ -11,7 +11,7 @@ export const FrightlessBirdsProject: project = {
     developmentStartDate: "Mar 2026",
     teamMembers: "5 (+1 temporary) members",
     contributions:[
-        {entry: "Being the lead programmer & git master"},
+        {entry: "Lead programmer & git master"},
         {entry: "Core player actions design (Group effort)"},
         {entry: "Minigame Framework"},
         {entry: "Brace rework"},
@@ -35,7 +35,7 @@ export const MeerMomoProject: project = {
     ],
     externalLinks: [
         {
-            label: "Play system demo",
+            label: "Play demo",
             link: "https://nebbdev.itch.io/modular-fish-system-showcase",
             imageUrl: "/assets/icons/Controller.svg"
         },

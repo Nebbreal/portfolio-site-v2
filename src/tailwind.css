@@ -38,15 +38,15 @@
     }
 
     h1 {
-        @apply font-heading text-text text-6xl
+        @apply font-heading text-text text-6xl mb-2
     }
 
     h2 {
-        @apply font-heading text-text text-4xl
+        @apply font-heading text-text text-4xl mb-2
     }
 
     h3 {
-        @apply font-heading text-text text-2xl
+        @apply font-heading text-text text-2xl mb-2
     }
 
     ul {
