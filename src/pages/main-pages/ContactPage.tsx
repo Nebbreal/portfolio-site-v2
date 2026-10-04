@@ -5,7 +5,7 @@ import Card from "../../components/Card.tsx";
 function ContactPage(){
     return (
         <div className={"flex flex-col justify-between items-center py-10 xl:px-[12%]"}>
-            <div className={"flex flex-col lg:flex-row gap-x-10"}>
+            <div className={"flex flex-col lg:flex-row gap-x-10 gap-y-5"}>
                 <div>
                     <Image title={"Me.jpg"} imageUrl={"/assets/images/other/Me.jpg"}
                            alt={"A 21 year old with short brown hair, a cream colored t-shirt and jeans"}/>

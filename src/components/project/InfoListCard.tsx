@@ -3,7 +3,8 @@ import Card from "../Card.tsx";
 
 type InfoCardProps = {
     title: string;
-    infoListEntries: listEntry[]
+    infoListEntries: listEntry[];
+    small?: boolean;
 }
 
 function InfoListCard(props: InfoCardProps) {
@@ -13,7 +14,7 @@ function InfoListCard(props: InfoCardProps) {
                 {contributions.map((contribution, index) => {
                     return (
                         <>
-                            <li key={index}>
+                            <li className={(props.small ? "text-xl" : "")} key={index}>
                                 {contribution.entry}
                             </li>
                             {contribution.children !== undefined && contribution.children.length > 0 && (
@@ -28,7 +29,7 @@ function InfoListCard(props: InfoCardProps) {
 
     return (
         <Card title={props.title + ".Card"}>
-            <p>
+            <p className={"py-2"}>
                 {RenderListEntries(props.infoListEntries)}
             </p>
         </Card>

@@ -19,6 +19,7 @@ function Footer() {
                 </div>
                 <div className={"lg:ms-4"}>
                     <h2 className={"text-lowlight"}>Find me at</h2>
+
                     <div className={"flex lg:flex-col lg:flex-row gap-x-2 gap-y-1"}>
                         <a href={"https://github.com/Nebbreal"} target="_blank" rel="noopener noreferrer">
                             <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"} imageAlt={"Github Logo"}/>
@@ -28,11 +29,11 @@ function Footer() {
                             <Button imageUrl={"/assets/images/external-icons/LinkedInLogo.svg"} imageAlt={"LinkedIn logo"}/>
                         </a>
                         <a href={"https://nebbdev.itch.io/"} target={"_blank"}>
-                            <Button className={"w-50"} imageUrl={"/assets/images/external-icons/ItchIoLogo.svg"}/>
+                            <Button imageUrl={"/assets/images/external-icons/ItchIoLogo.svg"}/>
                         </a>
                         <a href={"https://bsky.app/profile/nebbdev.bsky.social"} rel={"noopener noreferrer"}
                            target={"_blank"}>
-                            <Button className={"w-full"} imageUrl={"/assets/images/external-icons/BskyLogo.svg"} />
+                            <Button imageUrl={"/assets/images/external-icons/BskyLogo.svg"} />
                         </a>
                     </div>
                 </div>
