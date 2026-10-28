@@ -5,14 +5,14 @@ The site is built on React + Tailwind.
 The source code can be found in the ``src`` folder and most assets are stored in the ``public/assets`` folder.
 
 # How to run
-Visit https://www.dvanlaarhoven.com/
+Visit https://www.dvanlaarhoven.com/.
 
 **or**
 ## Requirements
 - Node 11.19.0
 ## Running the application
-1. Run ``npm i`` to install dependencies 
-2. Run ``npm run dev`` to run a development build 
+1. Run ``npm i`` to install dependencies.
+2. Run ``npm run dev`` to run a development build.
 
 **or** 
 
