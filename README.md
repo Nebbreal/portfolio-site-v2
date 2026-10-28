@@ -15,5 +15,6 @@ Visit https://www.dvanlaarhoven.com/
 2. Run ``npm run dev`` to run a development build 
 
 **or** 
-2. Run ``npm run build`` to build the site 
+
+2. Run ``npm run build`` to build the site.
 3. Run ``npm run preview`` to run the site.
