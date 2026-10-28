@@ -9,7 +9,7 @@ Visit https://www.dvanlaarhoven.com/.
 
 **or**
 ## Requirements
-- Node 11.19.0
+- Node 26.8.1
 ## Running the application
 1. Run ``npm i`` to install dependencies.
 2. Run ``npm run dev`` to run a development build.
