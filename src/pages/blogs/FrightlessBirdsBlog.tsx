@@ -93,14 +93,15 @@ function FrightlessBirdsBlog() {
             />
             <p>The Event System consists of 2 components, the GameEvent and the GameEventListener. </p>
 
-            <Image title={"GameEventRaise.png"} imageUrl={baseImagePath + "GameEventRaise.png"}
+            {/*<Image title={"GameEventRaise.png"} imageUrl={baseImagePath + "GameEventRaise.png"}
                    alt={"A code block showcasing the Raise method of GameEvent"}
             />
             <br/>
             <Image title={"OnWinGameCall.png"} imageUrl={baseImagePath + "OnWinGameCall.png"}
                    alt={"A code block showcasing the Raise method being called"}
             />
-            <br/>
+            <br/>*/
+            }
             <Image title={"OnWinGameEditor.png"} imageUrl={baseImagePath + "OnWinGameEditor.png"}
                    alt={"A unity component showcasing the OnWinGame event being linked to a Scoreboard Manager script"}
             />
