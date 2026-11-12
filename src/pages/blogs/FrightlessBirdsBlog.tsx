@@ -235,7 +235,7 @@ function FrightlessBirdsBlog() {
 
             <br />
             <h2 id="Frozen feathers(Minigame)">Frozen feathers(Minigame)</h2>
-            <p>For Frightless Birds I also desinged and created one of the minigames, that being Frozen Feathers.</p>
+            <p>For Frightless Birds I also designed and created one of the minigames, that being Frozen Feathers.</p>
 
             <Image title={"FrozenFeathersPreview.webp"} imageUrl={baseImagePath + "FrozenFeathersPreview.webp"}
                    alt={"A animated image showcasing 4 birds competing with each other " +
