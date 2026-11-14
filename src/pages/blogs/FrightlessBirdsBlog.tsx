@@ -258,7 +258,8 @@ function FrightlessBirdsBlog() {
 
             <br />
             <h2 id="PC Port">PC Port</h2>
-            <p>I've also worked on a PC port for Frightless Birds with permission from the school and the rest of Sugar Glider Studios.</p>
+            <p>I am also working on a PC port for Frightless Birds with permission from the school and the rest of Sugar Glider Studios.</p>
+            <p>This port currently is still actively being worked on. Which is why it is still missing a bit of polish and will contain a few bugs.</p>
             <p>The code for this can be found by clicking the button below.</p>
             <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"}>
                 <a href={"https://github.com/Nebbreal/FrightlessBirdsPc"} rel={"noopener noreferrer"}>
