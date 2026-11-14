@@ -17,6 +17,13 @@ export const FrightlessBirdsProject: project = {
         {entry: "Brace rework"},
         {entry: "Frozen Feathers (Minigame)"},
         {entry: "Kiwi model"}
+    ],
+    externalLinks:[
+        {
+            label: "Frightless Birds Code",
+            link: "https://github.com/Nebbreal/FrightlessBirdsPc",
+            imageUrl: "/assets/images/external-icons/GithubLogo.svg"
+        },
     ]
 }
 

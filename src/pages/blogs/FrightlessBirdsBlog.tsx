@@ -2,6 +2,7 @@ import {FrightlessBirdsProject} from "../../data/projects.ts";
 import type {Chapter} from "../../types/chapter.ts";
 import Image from "../../components/Image.tsx";
 import BlogBase from "./template/BlogBase.tsx";
+import Button from "../../components/Button.tsx";
 
 function FrightlessBirdsBlog() {
     const baseImagePath = "/assets/images/projects/blogs/frightless-birds/"
@@ -30,6 +31,10 @@ function FrightlessBirdsBlog() {
         {
             id: "Frozen feathers(Minigame)",
             label: "Frozen feathers(Minigame)"
+        },
+        {
+            id: "PC Port",
+            label: "PC Port"
         }
     ]
 
@@ -235,7 +240,7 @@ function FrightlessBirdsBlog() {
 
             <br />
             <h2 id="Frozen feathers(Minigame)">Frozen feathers(Minigame)</h2>
-            <p>For Frightless Birds I also desinged and created one of the minigames, that being Frozen Feathers.</p>
+            <p>For Frightless Birds I also designed and created one of the minigames, that being Frozen Feathers.</p>
 
             <Image title={"FrozenFeathersPreview.webp"} imageUrl={baseImagePath + "FrozenFeathersPreview.webp"}
                    alt={"A animated image showcasing 4 birds competing with each other " +
@@ -250,6 +255,17 @@ function FrightlessBirdsBlog() {
                 <br/>
                 Just like the brace rework Frozen Feathers ties into the Minigame Framework to allow for easy tweaking.
             </p>
+
+            <br />
+            <h2 id="PC Port">PC Port</h2>
+            <p>I am also working on a PC port for Frightless Birds with permission from the school and the rest of Sugar Glider Studios.</p>
+            <p>This port currently is still actively being worked on. Which is why it is still missing a bit of polish and will contain a few bugs.</p>
+            <p>The code for this can be found by clicking the button below.</p>
+            <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"}>
+                <a href={"https://github.com/Nebbreal/FrightlessBirdsPc"} rel={"noopener noreferrer"}>
+                    <h3>Frightless Birds code</h3>
+                </a>
+            </Button>
         </BlogBase>
     )
 }
