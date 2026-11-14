@@ -2,6 +2,7 @@ import {FrightlessBirdsProject} from "../../data/projects.ts";
 import type {Chapter} from "../../types/chapter.ts";
 import Image from "../../components/Image.tsx";
 import BlogBase from "./template/BlogBase.tsx";
+import Button from "../../components/Button.tsx";
 
 function FrightlessBirdsBlog() {
     const baseImagePath = "/assets/images/projects/blogs/frightless-birds/"
@@ -30,6 +31,10 @@ function FrightlessBirdsBlog() {
         {
             id: "Frozen feathers(Minigame)",
             label: "Frozen feathers(Minigame)"
+        },
+        {
+            id: "PC Port",
+            label: "PC Port"
         }
     ]
 
@@ -250,6 +255,16 @@ function FrightlessBirdsBlog() {
                 <br/>
                 Just like the brace rework Frozen Feathers ties into the Minigame Framework to allow for easy tweaking.
             </p>
+
+            <br />
+            <h2 id="PC Port">PC Port</h2>
+            <p>I've also worked on a PC port for Frightless Birds with permission from the school and the rest of Sugar Glider Studios.</p>
+            <p>The code for this can be found by clicking the button below.</p>
+            <Button imageUrl={"/assets/images/external-icons/GithubLogo.svg"}>
+                <a href={"https://github.com/Nebbreal/FrightlessBirdsPc"} rel={"noopener noreferrer"}>
+                    <h3>Frightless Birds code</h3>
+                </a>
+            </Button>
         </BlogBase>
     )
 }
