@@ -20,7 +20,7 @@ export const FrightlessBirdsProject: project = {
     ],
     externalLinks:[
         {
-            label: "Frightless Birds Code",
+            label: "View Code",
             link: "https://github.com/Nebbreal/FrightlessBirdsPc",
             imageUrl: "/assets/images/external-icons/GithubLogo.svg"
         },
